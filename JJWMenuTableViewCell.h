@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JJWMenuTableViewCell.h
 //  Will
 //
 //  Created by Joel West on 1/25/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface JJWMenuTableViewCell : UITableViewCell
+@property (nonatomic) IBOutlet UILabel *cellLabel;
 @end
-

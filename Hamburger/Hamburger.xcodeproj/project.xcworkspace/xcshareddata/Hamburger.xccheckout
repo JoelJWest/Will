@@ -5,24 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>314F50E2-B5F0-44B3-BC09-0C8332A53F52</string>
-=======
-	<string>F39B3106-DC46-4FAE-A20E-F7B6114FC738</string>
->>>>>>> acc3f2325bdd18a4fdbfa3c2c7d55015e8c49d31
+	<string>B91618BA-13D3-4DDD-B4FD-1A9A026FFC48</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Will</string>
+	<string>Hamburger</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</key>
 		<string>github.com:JoelWestBanno/Will.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Will.xcodeproj</string>
+	<string>Hamburger/Hamburger.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:JoelWestBanno/Will.git</string>
