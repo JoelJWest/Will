@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F39B3106-DC46-4FAE-A20E-F7B6114FC738</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Will</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</key>
+		<string>github.com:JoelWestBanno/Will.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Will.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:JoelWestBanno/Will.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BBB84BE11A5874CCEEF7D2F421B9C6FB2DCCFB52</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Will</string>
+		</dict>
+	</array>
+</dict>
+</plist>
