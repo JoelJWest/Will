@@ -12,7 +12,6 @@
 #import "JJWMainTableViewController.h"
 
 @interface JJWMenuViewController ()
-@property (strong, nonatomic) IBOutlet UIView *container;
 @property (strong, nonatomic) IBOutlet UITableView *menuTableView;
 @property (strong, nonatomic) NSArray *menuItems;
 @end
@@ -62,6 +61,8 @@
         JJWMainTableViewController *mainView = [[JJWMainTableViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainView];
         nav.view.frame = topView.view.frame;
+        
+        [topView removeFromParentViewController];
         [self addChildViewController:nav];
         [self.view addSubview:nav.view];
 
@@ -71,8 +72,9 @@
         TestViewController *test = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:[NSBundle mainBundle]];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:test];
         nav.view.frame = topView.view.frame;
-        [self addChildViewController:nav];
-        [self.view addSubview:nav.view];
+      
+        [self add
+        //[self.view addSubview:nav.view];
       
         
     }
