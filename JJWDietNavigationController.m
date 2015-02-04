@@ -1,18 +1,18 @@
 //
-//  TestViewController.m
+//  JJWDietNavigationController.m
 //  Will
 //
-//  Created by Joel West on 1/26/15.
+//  Created by Joel J. West on 2/2/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
-#import "TestViewController.h"
+#import "JJWDietNavigationController.h"
 
-@interface TestViewController ()
+@interface JJWDietNavigationController ()
 
 @end
 
-@implementation TestViewController
+@implementation JJWDietNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

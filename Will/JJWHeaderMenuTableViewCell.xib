@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="JJWHeaderMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O9-DZ-3Ag">
+                        <rect key="frame" x="8" y="5" width="190" height="189"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="67%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-FR-gc5">
+                                <rect key="frame" x="27" y="63" width="136" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8862745098" green="0.56470588239999997" blue="0.1019607843" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UMz-FR-gc5" secondAttribute="bottom" constant="64" id="0CO-6o-c1b"/>
+                            <constraint firstItem="UMz-FR-gc5" firstAttribute="top" secondItem="5O9-DZ-3Ag" secondAttribute="top" constant="63" id="2y4-Eh-eRz"/>
+                            <constraint firstAttribute="trailing" secondItem="UMz-FR-gc5" secondAttribute="trailing" constant="27" id="Cag-Yb-r9e"/>
+                            <constraint firstItem="UMz-FR-gc5" firstAttribute="leading" secondItem="5O9-DZ-3Ag" secondAttribute="leading" constant="27" id="qjz-y9-537"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.060920355901166928" blue="0.18494675279329609" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="5O9-DZ-3Ag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="13y-tz-J6z"/>
+                    <constraint firstAttribute="trailing" secondItem="5O9-DZ-3Ag" secondAttribute="trailing" constant="102" id="Zku-sQ-Hoe"/>
+                    <constraint firstItem="5O9-DZ-3Ag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bfs-JC-pdJ"/>
+                    <constraint firstAttribute="bottom" secondItem="5O9-DZ-3Ag" secondAttribute="bottom" constant="5" id="jlq-4N-xwQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.13723578542461562" blue="0.29045914804469275" alpha="0.0" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="percentageCompleteLabel" destination="UMz-FR-gc5" id="KbT-1h-snO"/>
+                <outlet property="squareView" destination="5O9-DZ-3Ag" id="Zad-Sy-PZo"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="314"/>
+        </tableViewCell>
+    </objects>
+</document>

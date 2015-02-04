@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JJWMenuViewController">
+            <connections>
+                <outlet property="containerView" destination="zB0-ux-qlF" id="dc4-UK-cfX"/>
+                <outlet property="tableView" destination="oP9-TW-BHS" id="Cs0-lz-gyt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-TW-BHS">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.060920355900000001" blue="0.1849467528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="9V8-M2-Kv7"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2gG-PP-2a9"/>
+                        <outlet property="delegate" destination="-1" id="CL4-kp-yq6"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB0-ux-qlF">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="zB0-ux-qlF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Rm-qY-MUa"/>
+                <constraint firstAttribute="bottom" secondItem="zB0-ux-qlF" secondAttribute="bottom" id="J9i-C0-XQz"/>
+                <constraint firstItem="oP9-TW-BHS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JBN-dk-tui"/>
+                <constraint firstItem="zB0-ux-qlF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y6a-5s-dds"/>
+                <constraint firstAttribute="bottom" secondItem="oP9-TW-BHS" secondAttribute="bottom" id="dyI-LO-yUy"/>
+                <constraint firstItem="oP9-TW-BHS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nrz-ry-dDN"/>
+                <constraint firstAttribute="trailing" secondItem="zB0-ux-qlF" secondAttribute="trailing" id="zth-8T-jUG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
