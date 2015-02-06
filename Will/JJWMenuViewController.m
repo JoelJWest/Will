@@ -13,6 +13,7 @@
 #import "JJWMainViewController.h"
 #import "JJWDietNavigationController.h"
 #import "JJWDietViewController.h"
+#import "JJWGoalTableViewCell.h"
 
 @interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
@@ -66,6 +67,8 @@
     [self.tableView registerNib:menuTableViewNib forCellReuseIdentifier:@"MenuCell"];
     UINib *headerMenuTableViewNib = [UINib nibWithNibName:@"JJWHeaderMenuTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:headerMenuTableViewNib forCellReuseIdentifier:@"HeaderMenuCell"];
+    UINib *goalTableViewNib = [UINib nibWithNibName:@"JJWGoalTableViewCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:goalTableViewNib forCellReuseIdentifier:@"GoalCell"];
 }
 
 -(void)setUpMenuItems{
@@ -75,7 +78,14 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
     if (indexPath.row == 0){
+        
+        JJWGoalTableViewCell *goalCell = [self.tableView dequeueReusableCellWithIdentifier:@"GoalCell"];
+        return goalCell;
+    }
+    
+    if (indexPath.row == 1){
         
         JJWHeaderMenuTableViewCell *headerCell = [self.tableView dequeueReusableCellWithIdentifier:@"HeaderMenuCell"];
         headerCell.percentageCompleteLabel.text = @"64%";
@@ -92,7 +102,11 @@
     
     if (indexPath.row == 0){
         
-        return 200;
+        return 80;
+    }
+    else if (indexPath.row == 1){
+        
+        return 150;
     }
     else{
         
@@ -109,7 +123,7 @@
     
     NSArray *childViewContollers = [self childViewControllers];
     UIViewController *currentTopViewController = childViewContollers[0];
-    
+   
     if (indexPath.row == 0){
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
@@ -163,10 +177,10 @@
     
     int move;
     if (self.containerView.frame.origin.x > 10){
-        move = -(self.view.frame.size.width/20)*13;
+        move = -200;
     }
     else{
-        move = (self.view.frame.size.width/20)*13;
+        move = 200;
     }
     
     [UIView animateWithDuration:.3 animations:^{

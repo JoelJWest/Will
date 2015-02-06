@@ -20,7 +20,7 @@
     circleLayerWhite.bounds = self.squareView.frame;
     circleLayerWhite.position = self.squareView.center;
     
-    UIBezierPath *circleWhite = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2 -20 startAngle:-M_PI/2 endAngle:(M_PI/2) * 3 clockwise:YES];
+    UIBezierPath *circleWhite = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2  startAngle:-M_PI/2 endAngle:(M_PI/2) * 3 clockwise:YES];
     circleLayerWhite.path = circleWhite.CGPath;
     
     circleLayerWhite.strokeColor = [UIColor whiteColor].CGColor;
@@ -33,10 +33,10 @@
     circleLayerRed.bounds = self.squareView.frame;
     circleLayerRed.position = self.squareView.center;
     
-    UIBezierPath *circleRed = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2 -20 startAngle:-M_PI/2 endAngle:M_PI clockwise:YES];
+    UIBezierPath *circleRed = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2  startAngle:-M_PI/2 endAngle:M_PI clockwise:YES];
     circleLayerRed.path = circleRed.CGPath;
     
-    circleLayerRed.strokeColor = [UIColor redColor].CGColor;
+    circleLayerRed.strokeColor = [UIColor colorWithRed:177/255.f green:5/255.f blue:17/255.f alpha:1].CGColor;
     circleLayerRed.lineWidth   = 10.0;
     circleLayerRed.fillColor = [UIColor clearColor].CGColor;
     [self.squareView.layer addSublayer:circleLayerRed];
@@ -45,10 +45,10 @@
     circleLayerGreen.bounds = self.squareView.frame;
     circleLayerGreen.position = self.squareView.center;
     
-    UIBezierPath *circleGreen = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2 -20 startAngle:-M_PI/2 endAngle:M_PI/2.3 clockwise:YES];
+    UIBezierPath *circleGreen = [UIBezierPath bezierPathWithArcCenter:self.percentageCompleteLabel.center radius:self.squareView.frame.size.width/2  startAngle:-M_PI/2 endAngle:M_PI/2.3 clockwise:YES];
     circleLayerGreen.path = circleGreen.CGPath;
     
-    circleLayerGreen.strokeColor = [UIColor greenColor].CGColor;
+    circleLayerGreen.strokeColor = [UIColor colorWithRed:93/255.f green:171/255.f blue:70/255.f alpha:1].CGColor;
     circleLayerGreen.lineWidth   = 10.0;
     circleLayerGreen.fillColor = [UIColor clearColor].CGColor;
     [self.squareView.layer addSublayer:circleLayerGreen];

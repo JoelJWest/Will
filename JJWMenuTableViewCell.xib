@@ -14,26 +14,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXQ-tx-DP4">
-                        <rect key="frame" x="8" y="6" width="219" height="47"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuS-rd-6oU">
+                        <rect key="frame" x="0.0" y="1" width="300" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXQ-tx-DP4">
+                                <rect key="frame" x="8" y="5" width="219" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="0.57000000000000006" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.023529411760000001" green="0.82352941180000006" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="DXQ-tx-DP4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="K3g-rb-n0X"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="DXQ-tx-DP4" secondAttribute="trailing" constant="65" id="fF6-CM-3sK"/>
-                    <constraint firstItem="DXQ-tx-DP4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tOD-8f-NLb"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="DXQ-tx-DP4" secondAttribute="bottom" constant="-2" id="z57-sh-pYl"/>
+                    <constraint firstItem="cuS-rd-6oU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="0Ix-FZ-9Nl"/>
+                    <constraint firstItem="cuS-rd-6oU" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="7" id="Mjx-nV-MUk"/>
+                    <constraint firstItem="cuS-rd-6oU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="NxH-UE-lgz"/>
+                    <constraint firstItem="cuS-rd-6oU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="cYQ-cP-M3m"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.0" green="0.060920355900000001" blue="0.1849467528" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="cellLabel" destination="DXQ-tx-DP4" id="IYs-DS-YzU"/>
             </connections>
-            <point key="canvasLocation" x="286" y="349"/>
+            <point key="canvasLocation" x="286" y="343"/>
         </tableViewCell>
     </objects>
 </document>

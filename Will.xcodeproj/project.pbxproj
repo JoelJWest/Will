@@ -15,6 +15,8 @@
 		2847B15A1A75EA050060D66B /* WillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B1591A75EA050060D66B /* WillTests.m */; };
 		2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */; };
 		2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */; };
+		38084D811A846A080097CCC2 /* JJWGoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */; };
+		38084D821A846A080097CCC2 /* JJWGoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
 		38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */; };
 		38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */; };
@@ -54,6 +56,9 @@
 		2847B1791A75F7C80060D66B /* JJWMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMenuTableViewCell.h; path = ../JJWMenuTableViewCell.h; sourceTree = "<group>"; };
 		2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMenuTableViewCell.m; path = ../JJWMenuTableViewCell.m; sourceTree = "<group>"; };
 		2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMenuTableViewCell.xib; path = ../JJWMenuTableViewCell.xib; sourceTree = "<group>"; };
+		38084D7E1A846A080097CCC2 /* JJWGoalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWGoalTableViewCell.h; sourceTree = "<group>"; };
+		38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWGoalTableViewCell.m; sourceTree = "<group>"; };
+		38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWGoalTableViewCell.xib; sourceTree = "<group>"; };
 		38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuViewController.h; sourceTree = "<group>"; };
 		38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuViewController.m; sourceTree = "<group>"; };
 		38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWMenuViewController.xib; sourceTree = "<group>"; };
@@ -199,6 +204,9 @@
 				38F5F4201A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.h */,
 				38F5F4211A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m */,
 				38F5F4221A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib */,
+				38084D7E1A846A080097CCC2 /* JJWGoalTableViewCell.h */,
+				38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */,
+				38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */,
 			);
 			name = "TableView Files";
 			sourceTree = "<group>";
@@ -338,6 +346,7 @@
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
 				38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */,
 				2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */,
+				38084D821A846A080097CCC2 /* JJWGoalTableViewCell.xib in Resources */,
 				38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38084D811A846A080097CCC2 /* JJWGoalTableViewCell.m in Sources */,
 				38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */,
 				38F5F4181A80356C00C2AF53 /* JJWDietViewController.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
