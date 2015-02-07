@@ -66,7 +66,7 @@
     
     UINib *menuTableViewNib = [UINib nibWithNibName:@"JJWMenuTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuTableViewNib forCellReuseIdentifier:@"MenuCell"];
-    UINib *menuHeaderTableViewNib = [UINib nibWithNibName:@"JJWMenuHeaderTableView" bundle:[NSBundle mainBundle]];
+    UINib *menuHeaderTableViewNib = [UINib nibWithNibName:@"JJWMenuHeaderTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuHeaderTableViewNib forCellReuseIdentifier:@"MenuHeaderCell"];
     UINib *menuCircleTableViewNib = [UINib nibWithNibName:@"JJWMenuCircleTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuCircleTableViewNib forCellReuseIdentifier:@"MenuCircleCell"];

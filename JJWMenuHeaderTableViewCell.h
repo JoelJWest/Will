@@ -10,4 +10,7 @@
 
 @interface JJWMenuHeaderTableViewCell : UITableViewCell
 
+@property (nonatomic) IBOutlet UILabel *yourGoalLabel;
+@property (nonatomic) IBOutlet UILabel *yourBestLabel;
+
 @end
