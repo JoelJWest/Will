@@ -15,10 +15,31 @@
 		2847B15A1A75EA050060D66B /* WillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B1591A75EA050060D66B /* WillTests.m */; };
 		2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */; };
 		2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */; };
-		38084D811A846A080097CCC2 /* JJWGoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */; };
-		38084D821A846A080097CCC2 /* JJWGoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
 		38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */; };
+		38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */; };
+		38B5AAAD1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAAB1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib */; };
+		38B5AAB11A85DD160088D13F /* JJWMenuCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5AAAF1A85DD160088D13F /* JJWMenuCircleTableViewCell.m */; };
+		38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB01A85DD160088D13F /* JJWMenuCircleTableViewCell.xib */; };
+		38B5AAC81A85DFDE0088D13F /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB51A85DFDE0088D13F /* Apache License.txt */; };
+		38B5AAC91A85DFDE0088D13F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB61A85DFDE0088D13F /* Roboto-Black.ttf */; };
+		38B5AACA1A85DFDE0088D13F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB71A85DFDE0088D13F /* Roboto-BlackItalic.ttf */; };
+		38B5AACB1A85DFDE0088D13F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB81A85DFDE0088D13F /* Roboto-Bold.ttf */; };
+		38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAB91A85DFDE0088D13F /* Roboto-BoldItalic.ttf */; };
+		38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABA1A85DFDE0088D13F /* Roboto-Italic.ttf */; };
+		38B5AACE1A85DFDE0088D13F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABB1A85DFDE0088D13F /* Roboto-Light.ttf */; };
+		38B5AACF1A85DFDE0088D13F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABC1A85DFDE0088D13F /* Roboto-LightItalic.ttf */; };
+		38B5AAD01A85DFDE0088D13F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABD1A85DFDE0088D13F /* Roboto-Medium.ttf */; };
+		38B5AAD11A85DFDE0088D13F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABE1A85DFDE0088D13F /* Roboto-MediumItalic.ttf */; };
+		38B5AAD21A85DFDE0088D13F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AABF1A85DFDE0088D13F /* Roboto-Regular.ttf */; };
+		38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC01A85DFDE0088D13F /* Roboto-Thin.ttf */; };
+		38B5AAD41A85DFDE0088D13F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC11A85DFDE0088D13F /* Roboto-ThinItalic.ttf */; };
+		38B5AAD51A85DFDE0088D13F /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC21A85DFDE0088D13F /* RobotoCondensed-Bold.ttf */; };
+		38B5AAD61A85DFDE0088D13F /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC31A85DFDE0088D13F /* RobotoCondensed-BoldItalic.ttf */; };
+		38B5AAD71A85DFDE0088D13F /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC41A85DFDE0088D13F /* RobotoCondensed-Italic.ttf */; };
+		38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */; };
+		38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */; };
+		38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */; };
 		38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */; };
 		38F5F40F1A80312000C2AF53 /* JJWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */; };
 		38F5F4131A80314F00C2AF53 /* JJWMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4111A80314F00C2AF53 /* JJWMainNavigationController.m */; };
@@ -27,8 +48,6 @@
 		38F5F4191A80356C00C2AF53 /* JJWDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4171A80356C00C2AF53 /* JJWDietViewController.xib */; };
 		38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */; };
 		38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */; };
-		38F5F4231A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4211A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m */; };
-		38F5F4241A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4221A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +75,34 @@
 		2847B1791A75F7C80060D66B /* JJWMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMenuTableViewCell.h; path = ../JJWMenuTableViewCell.h; sourceTree = "<group>"; };
 		2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMenuTableViewCell.m; path = ../JJWMenuTableViewCell.m; sourceTree = "<group>"; };
 		2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMenuTableViewCell.xib; path = ../JJWMenuTableViewCell.xib; sourceTree = "<group>"; };
-		38084D7E1A846A080097CCC2 /* JJWGoalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWGoalTableViewCell.h; sourceTree = "<group>"; };
-		38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWGoalTableViewCell.m; sourceTree = "<group>"; };
-		38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWGoalTableViewCell.xib; sourceTree = "<group>"; };
 		38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuViewController.h; sourceTree = "<group>"; };
 		38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuViewController.m; sourceTree = "<group>"; };
 		38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWMenuViewController.xib; sourceTree = "<group>"; };
+		38B5AAA91A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMenuHeaderTableViewCell.h; path = ../JJWMenuHeaderTableViewCell.h; sourceTree = "<group>"; };
+		38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMenuHeaderTableViewCell.m; path = ../JJWMenuHeaderTableViewCell.m; sourceTree = "<group>"; };
+		38B5AAAB1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMenuHeaderTableViewCell.xib; path = ../JJWMenuHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		38B5AAAE1A85DD160088D13F /* JJWMenuCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMenuCircleTableViewCell.h; path = ../JJWMenuCircleTableViewCell.h; sourceTree = "<group>"; };
+		38B5AAAF1A85DD160088D13F /* JJWMenuCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMenuCircleTableViewCell.m; path = ../JJWMenuCircleTableViewCell.m; sourceTree = "<group>"; };
+		38B5AAB01A85DD160088D13F /* JJWMenuCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMenuCircleTableViewCell.xib; path = ../JJWMenuCircleTableViewCell.xib; sourceTree = "<group>"; };
+		38B5AAB51A85DFDE0088D13F /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		38B5AAB61A85DFDE0088D13F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		38B5AAB71A85DFDE0088D13F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		38B5AAB81A85DFDE0088D13F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		38B5AAB91A85DFDE0088D13F /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		38B5AABA1A85DFDE0088D13F /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		38B5AABB1A85DFDE0088D13F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		38B5AABC1A85DFDE0088D13F /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		38B5AABD1A85DFDE0088D13F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		38B5AABE1A85DFDE0088D13F /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		38B5AABF1A85DFDE0088D13F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		38B5AAC01A85DFDE0088D13F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		38B5AAC11A85DFDE0088D13F /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		38B5AAC21A85DFDE0088D13F /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		38B5AAC31A85DFDE0088D13F /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		38B5AAC41A85DFDE0088D13F /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		38F5F40B1A80312000C2AF53 /* JJWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMainViewController.h; path = ../JJWMainViewController.h; sourceTree = "<group>"; };
 		38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMainViewController.m; path = ../JJWMainViewController.m; sourceTree = "<group>"; };
 		38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMainViewController.xib; path = ../JJWMainViewController.xib; sourceTree = "<group>"; };
@@ -74,9 +115,6 @@
 		38F5F41A1A80359500C2AF53 /* JJWDietNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWDietNavigationController.h; path = ../JJWDietNavigationController.h; sourceTree = "<group>"; };
 		38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWDietNavigationController.m; path = ../JJWDietNavigationController.m; sourceTree = "<group>"; };
 		38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWDietNavigationController.xib; path = ../JJWDietNavigationController.xib; sourceTree = "<group>"; };
-		38F5F4201A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHeaderMenuTableViewCell.h; sourceTree = "<group>"; };
-		38F5F4211A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHeaderMenuTableViewCell.m; sourceTree = "<group>"; };
-		38F5F4221A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHeaderMenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +171,7 @@
 		2847B13A1A75EA050060D66B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				38B5AAB31A85DE7A0088D13F /* Fonts */,
 				2847B13B1A75EA050060D66B /* Info.plist */,
 				2847B13C1A75EA050060D66B /* main.m */,
 			);
@@ -198,15 +237,15 @@
 		2847B1671A75EB200060D66B /* TableView Files */ = {
 			isa = PBXGroup;
 			children = (
+				38B5AAA91A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.h */,
+				38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */,
+				38B5AAAB1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib */,
+				38B5AAAE1A85DD160088D13F /* JJWMenuCircleTableViewCell.h */,
+				38B5AAAF1A85DD160088D13F /* JJWMenuCircleTableViewCell.m */,
+				38B5AAB01A85DD160088D13F /* JJWMenuCircleTableViewCell.xib */,
 				2847B1791A75F7C80060D66B /* JJWMenuTableViewCell.h */,
 				2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */,
 				2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */,
-				38F5F4201A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.h */,
-				38F5F4211A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m */,
-				38F5F4221A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib */,
-				38084D7E1A846A080097CCC2 /* JJWGoalTableViewCell.h */,
-				38084D7F1A846A080097CCC2 /* JJWGoalTableViewCell.m */,
-				38084D801A846A080097CCC2 /* JJWGoalTableViewCell.xib */,
 			);
 			name = "TableView Files";
 			sourceTree = "<group>";
@@ -249,6 +288,40 @@
 				38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */,
 			);
 			name = "Home ViewControllers";
+			sourceTree = "<group>";
+		};
+		38B5AAB31A85DE7A0088D13F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				38B5AAB41A85DFDE0088D13F /* roboto */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		38B5AAB41A85DFDE0088D13F /* roboto */ = {
+			isa = PBXGroup;
+			children = (
+				38B5AAB51A85DFDE0088D13F /* Apache License.txt */,
+				38B5AAB61A85DFDE0088D13F /* Roboto-Black.ttf */,
+				38B5AAB71A85DFDE0088D13F /* Roboto-BlackItalic.ttf */,
+				38B5AAB81A85DFDE0088D13F /* Roboto-Bold.ttf */,
+				38B5AAB91A85DFDE0088D13F /* Roboto-BoldItalic.ttf */,
+				38B5AABA1A85DFDE0088D13F /* Roboto-Italic.ttf */,
+				38B5AABB1A85DFDE0088D13F /* Roboto-Light.ttf */,
+				38B5AABC1A85DFDE0088D13F /* Roboto-LightItalic.ttf */,
+				38B5AABD1A85DFDE0088D13F /* Roboto-Medium.ttf */,
+				38B5AABE1A85DFDE0088D13F /* Roboto-MediumItalic.ttf */,
+				38B5AABF1A85DFDE0088D13F /* Roboto-Regular.ttf */,
+				38B5AAC01A85DFDE0088D13F /* Roboto-Thin.ttf */,
+				38B5AAC11A85DFDE0088D13F /* Roboto-ThinItalic.ttf */,
+				38B5AAC21A85DFDE0088D13F /* RobotoCondensed-Bold.ttf */,
+				38B5AAC31A85DFDE0088D13F /* RobotoCondensed-BoldItalic.ttf */,
+				38B5AAC41A85DFDE0088D13F /* RobotoCondensed-Italic.ttf */,
+				38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */,
+				38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */,
+				38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */,
+			);
+			path = roboto;
 			sourceTree = "<group>";
 		};
 		38F5F41F1A807B5900C2AF53 /* Menu ViewControllers */ = {
@@ -338,16 +411,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F5F4241A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.xib in Resources */,
+				38B5AACB1A85DFDE0088D13F /* Roboto-Bold.ttf in Resources */,
 				2847B14E1A75EA050060D66B /* LaunchScreen.xib in Resources */,
 				38F5F4141A80314F00C2AF53 /* JJWMainNavigationController.xib in Resources */,
+				38B5AAD71A85DFDE0088D13F /* RobotoCondensed-Italic.ttf in Resources */,
+				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
+				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
+				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
+				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
 				38F5F4191A80356C00C2AF53 /* JJWDietViewController.xib in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWMainViewController.xib in Resources */,
+				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
+				38B5AAD01A85DFDE0088D13F /* Roboto-Medium.ttf in Resources */,
+				38B5AACA1A85DFDE0088D13F /* Roboto-BlackItalic.ttf in Resources */,
+				38B5AAAD1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib in Resources */,
 				38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */,
+				38B5AACE1A85DFDE0088D13F /* Roboto-Light.ttf in Resources */,
 				2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */,
-				38084D821A846A080097CCC2 /* JJWGoalTableViewCell.xib in Resources */,
+				38B5AAD21A85DFDE0088D13F /* Roboto-Regular.ttf in Resources */,
+				38B5AACF1A85DFDE0088D13F /* Roboto-LightItalic.ttf in Resources */,
+				38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */,
+				38B5AAD51A85DFDE0088D13F /* RobotoCondensed-Bold.ttf in Resources */,
+				38B5AAD11A85DFDE0088D13F /* Roboto-MediumItalic.ttf in Resources */,
+				38B5AAD61A85DFDE0088D13F /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				38B5AAC81A85DFDE0088D13F /* Apache License.txt in Resources */,
 				38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */,
+				38B5AAD41A85DFDE0088D13F /* Roboto-ThinItalic.ttf in Resources */,
+				38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */,
+				38B5AAC91A85DFDE0088D13F /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,17 +457,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38084D811A846A080097CCC2 /* JJWGoalTableViewCell.m in Sources */,
 				38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */,
 				38F5F4181A80356C00C2AF53 /* JJWDietViewController.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
 				38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */,
-				38F5F4231A807BA400C2AF53 /* JJWHeaderMenuTableViewCell.m in Sources */,
 				2847B1431A75EA050060D66B /* Will.xcdatamodeld in Sources */,
 				38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */,
+				38B5AAB11A85DD160088D13F /* JJWMenuCircleTableViewCell.m in Sources */,
 				2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */,
 				38F5F4131A80314F00C2AF53 /* JJWMainNavigationController.m in Sources */,
 				2847B13D1A75EA050060D66B /* main.m in Sources */,
+				38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

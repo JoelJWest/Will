@@ -1,14 +1,14 @@
 //
-//  JJWGoalTableViewCell.m
+//  JJWMenuHeaderTableViewCell.m
 //  Will
 //
-//  Created by Joel J. West on 2/5/15.
+//  Created by Joel J. West on 2/6/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
-#import "JJWGoalTableViewCell.h"
+#import "JJWMenuHeaderTableViewCell.h"
 
-@implementation JJWGoalTableViewCell
+@implementation JJWMenuHeaderTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

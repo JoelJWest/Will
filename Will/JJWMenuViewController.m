@@ -8,12 +8,12 @@
 
 #import "JJWMenuViewController.h"
 #import "JJWMenuTableViewCell.h"
-#import "JJWHeaderMenuTableViewCell.h"
+#import "JJWMenuHeaderTableViewCell.h"
+#import "JJWMenuCircleTableViewCell.h"
 #import "JJWMainNavigationController.h"
 #import "JJWMainViewController.h"
 #import "JJWDietNavigationController.h"
 #import "JJWDietViewController.h"
-#import "JJWGoalTableViewCell.h"
 
 @interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
@@ -59,16 +59,17 @@
     
 }
 
--(void)setUpTableView{
-    
+-(void)setUpTableView
+{
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
     UINib *menuTableViewNib = [UINib nibWithNibName:@"JJWMenuTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuTableViewNib forCellReuseIdentifier:@"MenuCell"];
-    UINib *headerMenuTableViewNib = [UINib nibWithNibName:@"JJWHeaderMenuTableViewCell" bundle:[NSBundle mainBundle]];
-    [self.tableView registerNib:headerMenuTableViewNib forCellReuseIdentifier:@"HeaderMenuCell"];
-    UINib *goalTableViewNib = [UINib nibWithNibName:@"JJWGoalTableViewCell" bundle:[NSBundle mainBundle]];
-    [self.tableView registerNib:goalTableViewNib forCellReuseIdentifier:@"GoalCell"];
+    UINib *menuHeaderTableViewNib = [UINib nibWithNibName:@"JJWMenuHeaderTableView" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:menuHeaderTableViewNib forCellReuseIdentifier:@"MenuHeaderCell"];
+    UINib *menuCircleTableViewNib = [UINib nibWithNibName:@"JJWMenuCircleTableViewCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:menuCircleTableViewNib forCellReuseIdentifier:@"MenuCircleCell"];
 }
 
 -(void)setUpMenuItems{
@@ -81,16 +82,15 @@
     
     if (indexPath.row == 0){
         
-        JJWGoalTableViewCell *goalCell = [self.tableView dequeueReusableCellWithIdentifier:@"GoalCell"];
-        return goalCell;
+        JJWMenuHeaderTableViewCell *headerCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuHeaderCell"];
+        return headerCell;
     }
     
     if (indexPath.row == 1){
         
-        JJWHeaderMenuTableViewCell *headerCell = [self.tableView dequeueReusableCellWithIdentifier:@"HeaderMenuCell"];
-        headerCell.percentageCompleteLabel.text = @"64%";
-        headerCell.userInteractionEnabled = NO;
-        return headerCell;
+        JJWMenuCircleTableViewCell *circleCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCircleCell"];
+     
+        return circleCell;
         
     }
     JJWMenuTableViewCell *menuCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
@@ -102,7 +102,7 @@
     
     if (indexPath.row == 0){
         
-        return 80;
+        return 150;
     }
     else if (indexPath.row == 1){
         
@@ -177,10 +177,10 @@
     
     int move;
     if (self.containerView.frame.origin.x > 10){
-        move = -200;
+        move = -250;
     }
     else{
-        move = 200;
+        move = 250;
     }
     
     [UIView animateWithDuration:.3 animations:^{
