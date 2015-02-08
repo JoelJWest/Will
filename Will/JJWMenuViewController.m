@@ -36,26 +36,14 @@
     return self;
 }
 
--(instancetype)init{
-    
-    self = [super init];
-    if (self){
-        
-        
-      
-    }
-    return self;
-}
-
--(void)addTopViewController{
-    
+-(void)addTopViewController
+{
     JJWMainViewController *homeViewController = [[JJWMainViewController alloc] init];
     JJWMainNavigationController *homeNavContoller = [[JJWMainNavigationController alloc] initWithRootViewController:homeViewController];
-    
     homeNavContoller.view.frame = self.containerView.frame;
+    
     [self addChildViewController:homeNavContoller];
     [self.containerView addSubview:homeNavContoller.view];
-    
 }
 
 -(void)setUpTableView
@@ -91,14 +79,14 @@
     }
 }
 
--(void)setUpMenuItems{
+-(void)setUpMenuItems
+{
     
     self.menuItems = @[@"Today",@"Habits",@"Meals",@"Workouts",@"Settings"];
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (indexPath.row == 0){
         
         JJWMenuHeaderTableViewCell *headerCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuHeaderCell"];
@@ -108,19 +96,17 @@
     else if (indexPath.row == 1){
         
         JJWMenuCircleTableViewCell *circleCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCircleCell"];
-     
         return circleCell;
-        
     }
     else{
-    JJWMenuTableViewCell *menuCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
-    menuCell.cellLabel.text = [self.menuItems objectAtIndex:indexPath.row-2];
-    return menuCell;
+        JJWMenuTableViewCell *menuCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
+        menuCell.cellLabel.text = [self.menuItems objectAtIndex:indexPath.row-2];
+        return menuCell;
     }
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (indexPath.row == 0){
         
         return 150;
@@ -135,13 +121,14 @@
     }
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return [self.menuItems count]+2;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
     NSArray *childViewContollers = [self childViewControllers];
     UIViewController *currentTopViewController = childViewContollers[0];
    
@@ -152,6 +139,7 @@
     }
                                                                       
     if (indexPath.row == 2){
+        
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
         nvc.view.frame = self.containerView.window.frame;
@@ -172,8 +160,6 @@
         [self.containerView addSubview:nvc.view];
     }
     else if (indexPath.row == 4) {
-        
-        
         
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = [UIColor orangeColor];
@@ -200,13 +186,11 @@
     for (UIViewController *v in childViewContollers){
         [v.view removeFromSuperview];
         [v removeFromParentViewController];
-        
     }
-    
 }
 
--(void)menuAnimation{
-    
+-(void)menuAnimation
+{
     int move;
     if (self.containerView.frame.origin.x > 10){
         move = -250;
@@ -219,4 +203,5 @@
         self.containerView.center = CGPointMake(self.containerView.center.x + move, self.containerView.center.y);
     }];
 }
+
 @end
