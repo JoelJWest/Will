@@ -15,6 +15,7 @@
 #import "JJWDietNavigationController.h"
 #import "JJWDietViewController.h"
 #import <QuartzCore/QuartzCore.h>
+
 @interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *menuItems;
@@ -23,16 +24,14 @@
 
 @implementation JJWMenuViewController
 
--(instancetype)initFirstTime{
-    
+-(instancetype)initFirstTime
+{
     self = [super init];
     if (self){
-        
         [[NSBundle mainBundle] loadNibNamed:@"JJWMenuViewController" owner:self options:nil];
         [self setUpMenuItems];
         [self setUpTableView];
         [self addTopViewController];
-    
     }
     return self;
 }
@@ -71,18 +70,25 @@
     UINib *menuCircleTableViewNib = [UINib nibWithNibName:@"JJWMenuCircleTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuCircleTableViewNib forCellReuseIdentifier:@"MenuCircleCell"];
     
+    CALayer *grayLayer = [CALayer layer];
+    grayLayer.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.x, self.tableView.frame.size.width, self.tableView.frame.size.height/2);
+    grayLayer.backgroundColor = [UIColor colorWithRed:0.185447 green:0.185442 blue:0.185445 alpha:1].CGColor;
     
-    
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = self.tableView.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:0.185447 green:0.185442 blue:0.185445 alpha:1].CGColor, (id)[[UIColor whiteColor] CGColor], nil];
-   
-    
-    UIView *tableBackgroundView = [[UIView alloc] init];
-    tableBackgroundView.bounds = CGRectMake(self.tableView.bounds.origin.x, self.tableView.bounds.origin.y, self.tableView.bounds.size.width, self.view.window.frame.size.height);
-    [tableBackgroundView.layer insertSublayer:gradient atIndex:0];
+    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.x, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+    backgroundView.backgroundColor = [UIColor whiteColor];
+    [backgroundView.layer insertSublayer:grayLayer atIndex:1];
+    self.tableView.backgroundView = backgroundView;
  
-    [self.tableView setBackgroundView:tableBackgroundView];
+    CGRect screen = [UIScreen mainScreen].bounds;
+    
+    if (screen.size.height > 568){
+        self.tableView.bounces = NO;
+        self.tableView.scrollEnabled = NO;
+    }
+    else{
+        self.tableView.bounces = YES;
+        self.tableView.scrollEnabled = YES;
+    }
 }
 
 -(void)setUpMenuItems{
@@ -139,7 +145,13 @@
     NSArray *childViewContollers = [self childViewControllers];
     UIViewController *currentTopViewController = childViewContollers[0];
    
-    if (indexPath.row == 0){
+    for (int i = 0; i < 5; i++){
+        
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i + 2 inSection:0]];
+        selectedCell.cellLabel.textColor = [UIColor colorWithRed:0.185447 green:0.185442 blue:0.185445 alpha:1];
+    }
+                                                                      
+    if (indexPath.row == 2){
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
         nvc.view.frame = self.containerView.window.frame;
@@ -149,7 +161,7 @@
         [self.containerView addSubview:nvc.view];
         
     }
-    else if (indexPath.row == 1) {
+    else if (indexPath.row == 3) {
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
@@ -159,7 +171,12 @@
         [self addChildViewController:nvc];
         [self.containerView addSubview:nvc.view];
     }
-    else if (indexPath.row == 2) {
+    else if (indexPath.row == 4) {
+        
+        
+        
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        selectedCell.cellLabel.textColor = [UIColor orangeColor];
         
         JJWDietViewController *vc = [[JJWDietViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
