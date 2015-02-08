@@ -48,6 +48,7 @@
 		38F5F4191A80356C00C2AF53 /* JJWDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4171A80356C00C2AF53 /* JJWDietViewController.xib */; };
 		38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */; };
 		38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */; };
+		38F870921A87252F0049199E /* JJWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F870911A87252F0049199E /* JJWCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		38F5F41A1A80359500C2AF53 /* JJWDietNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWDietNavigationController.h; path = ../JJWDietNavigationController.h; sourceTree = "<group>"; };
 		38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWDietNavigationController.m; path = ../JJWDietNavigationController.m; sourceTree = "<group>"; };
 		38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWDietNavigationController.xib; path = ../JJWDietNavigationController.xib; sourceTree = "<group>"; };
+		38F870901A87252F0049199E /* JJWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWCircleView.h; sourceTree = "<group>"; };
+		38F870911A87252F0049199E /* JJWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				38B5AAAE1A85DD160088D13F /* JJWMenuCircleTableViewCell.h */,
 				38B5AAAF1A85DD160088D13F /* JJWMenuCircleTableViewCell.m */,
 				38B5AAB01A85DD160088D13F /* JJWMenuCircleTableViewCell.xib */,
+				38F870901A87252F0049199E /* JJWCircleView.h */,
+				38F870911A87252F0049199E /* JJWCircleView.m */,
 				2847B1791A75F7C80060D66B /* JJWMenuTableViewCell.h */,
 				2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */,
 				2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */,
@@ -459,6 +464,7 @@
 			files = (
 				38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */,
 				38F5F4181A80356C00C2AF53 /* JJWDietViewController.m in Sources */,
+				38F870921A87252F0049199E /* JJWCircleView.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
 				38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */,
 				2847B1431A75EA050060D66B /* Will.xcdatamodeld in Sources */,

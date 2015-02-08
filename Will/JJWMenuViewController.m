@@ -14,7 +14,7 @@
 #import "JJWMainViewController.h"
 #import "JJWDietNavigationController.h"
 #import "JJWDietViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 @interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *menuItems;
@@ -70,6 +70,19 @@
     [self.tableView registerNib:menuHeaderTableViewNib forCellReuseIdentifier:@"MenuHeaderCell"];
     UINib *menuCircleTableViewNib = [UINib nibWithNibName:@"JJWMenuCircleTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:menuCircleTableViewNib forCellReuseIdentifier:@"MenuCircleCell"];
+    
+    
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.tableView.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:0.185447 green:0.185442 blue:0.185445 alpha:1].CGColor, (id)[[UIColor whiteColor] CGColor], nil];
+   
+    
+    UIView *tableBackgroundView = [[UIView alloc] init];
+    tableBackgroundView.bounds = CGRectMake(self.tableView.bounds.origin.x, self.tableView.bounds.origin.y, self.tableView.bounds.size.width, self.view.window.frame.size.height);
+    [tableBackgroundView.layer insertSublayer:gradient atIndex:0];
+ 
+    [self.tableView setBackgroundView:tableBackgroundView];
 }
 
 -(void)setUpMenuItems{
@@ -86,16 +99,18 @@
         return headerCell;
     }
     
-    if (indexPath.row == 1){
+    else if (indexPath.row == 1){
         
         JJWMenuCircleTableViewCell *circleCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCircleCell"];
      
         return circleCell;
         
     }
+    else{
     JJWMenuTableViewCell *menuCell = [self.tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
-    menuCell.cellLabel.text = [self.menuItems objectAtIndex:indexPath.row];
+    menuCell.cellLabel.text = [self.menuItems objectAtIndex:indexPath.row-2];
     return menuCell;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -106,7 +121,7 @@
     }
     else if (indexPath.row == 1){
         
-        return 150;
+        return 220;
     }
     else{
         
@@ -116,7 +131,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [self.menuItems count];
+    return [self.menuItems count]+2;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
