@@ -219,9 +219,11 @@
         [v removeFromParentViewController];
     }
     
-    [UIView animateWithDuration:.3 animations:^{
+    [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:7 initialSpringVelocity:25 options:UIViewAnimationOptionCurveEaseOut animations:^
+     {
         self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.center.y);
-    }];
+     }
+    completion:nil];
 }
 
 
@@ -242,15 +244,17 @@
 {
     int move;
     if (self.containerView.frame.origin.x > 100){
-        move = 250;
+        move = 245;
     }
     else{
         move = 0;
     }
-    
-    [UIView animateWithDuration:.3 animations:^{
+
+    [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:7 initialSpringVelocity:25 options:UIViewAnimationOptionCurveEaseOut animations:^
+    {
         self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2)+move, self.containerView.center.y);
-    }];
+    }
+    completion:nil];
 }
 
 - (void)animateMenuReverse
@@ -260,12 +264,14 @@
         move = 0;
     }
     else{
-        move = 250;
+        move = 245;
     }
-    
-    [UIView animateWithDuration:.3 animations:^{
-        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2)+move, self.containerView.center.y);
-    }];
+
+    [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:7 initialSpringVelocity:25 options:UIViewAnimationOptionCurveEaseOut animations:^
+    {
+       self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2)+move, self.containerView.center.y);
+    }
+    completion:nil];
 }
 
 @end
