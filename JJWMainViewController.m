@@ -18,8 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(menuAction)];
-    self.navigationItem.leftBarButtonItem = menuButton;
+    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [menuButton addTarget:self action:@selector(menuAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
+  
+    UIPanGestureRecognizer *panRecognizer;
+    panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                            action:@selector(wasDragged:)];
+ 
+    panRecognizer.cancelsTouchesInView = YES;
+    [menuButton addGestureRecognizer:panRecognizer];
+}
+
+- (void)wasDragged:(UIPanGestureRecognizer *)recognizer {
+    UIButton *button = (UIButton *)recognizer.view;
+    CGPoint translation = [recognizer translationInView:button];
+    [self.delegate didDragWithMovment:translation.x];
+    [recognizer setTranslation:CGPointZero inView:button];
+    
+    if(recognizer.state == UIGestureRecognizerStateEnded)
+    {
+        [self.delegate animateMenu];
+    }
 }
 
 -(void)menuAction{
@@ -57,5 +77,6 @@
     [super touchesEnded:touches withEvent:event];
     [self.delegate animateMenu];
 }
+
 
 @end

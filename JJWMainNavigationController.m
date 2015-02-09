@@ -26,11 +26,5 @@
     layer.shadowPath = [[UIBezierPath bezierPathWithRect:layer.bounds] CGPath];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end
