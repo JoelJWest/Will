@@ -10,14 +10,21 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface JJWMainNavigationController ()
-
 @end
 
 @implementation JJWMainNavigationController
 
-- (void)viewDidLoad {
+
+#pragma mark Initilization Methods
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+    [self addShadow];
+}
+
+- (void)addShadow
+{
     CALayer *layer = self.view.layer;
     layer.shadowOffset = CGSizeMake(1, 1);
     layer.shadowColor = [[UIColor blackColor] CGColor];
@@ -25,6 +32,5 @@
     layer.shadowOpacity = 0.80f;
     layer.shadowPath = [[UIBezierPath bezierPathWithRect:layer.bounds] CGPath];
 }
-
 
 @end

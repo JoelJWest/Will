@@ -15,22 +15,32 @@
 
 @implementation JJWMainViewController
 
-- (void)viewDidLoad {
+
+#pragma mark Initilization Methods
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-  
+    [self addMenuButtonWithGesture];
+}
+
+- (void)addMenuButtonWithGesture
+{
     UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [menuButton addTarget:self action:@selector(menuAction) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
-  
+    
     UIPanGestureRecognizer *panRecognizer;
-    panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
-                                                            action:@selector(wasDragged:)];
- 
+    panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
     panRecognizer.cancelsTouchesInView = YES;
     [menuButton addGestureRecognizer:panRecognizer];
 }
 
-- (void)wasDragged:(UIPanGestureRecognizer *)recognizer {
+
+#pragma  mark Gesture and Menu Button Methods
+
+- (void)wasDragged:(UIPanGestureRecognizer *)recognizer
+{
     UIButton *button = (UIButton *)recognizer.view;
     CGPoint translation = [recognizer translationInView:button];
     [self.delegate didDragWithMovment:translation.x];
@@ -42,13 +52,15 @@
     }
 }
 
--(void)menuAction{
-    
+- (void)menuAction
+{
     [self.delegate animateMenuReverse];
-    
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+
+#pragma  mark Touches Methods
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesBegan:touches withEvent:event];
     UITouch *touch = [touches anyObject];
@@ -58,7 +70,7 @@
     }
 }
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesMoved:touches withEvent:event];
     UITouch *touch = [touches anyObject];
@@ -72,7 +84,7 @@
     }
 }
 
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesEnded:touches withEvent:event];
     [self.delegate animateMenu];

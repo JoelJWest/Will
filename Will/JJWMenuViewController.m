@@ -17,15 +17,21 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JJWMacros.h"
 
-@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate, JJWMainViewControllerDlegate>
+@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate, JJWDietViewController, JJWMainViewControllerDlegate>
+
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *menuItems;
 @property (nonatomic) IBOutlet UIView *containerView;
+
 @end
+
 
 @implementation JJWMenuViewController
 
--(instancetype)initFirstTime
+
+#pragma mark Initilization Methods
+
+- (instancetype)initFirstTime
 {
     self = [super init];
     if (self){
@@ -37,7 +43,7 @@
     return self;
 }
 
--(void)addTopViewController
+- (void)addTopViewController
 {
     JJWMainViewController *homeViewController = [[JJWMainViewController alloc] init];
     homeViewController.delegate = self;
@@ -48,7 +54,7 @@
     [self.containerView addSubview:homeNavContoller.view];
 }
 
--(void)setUpTableView
+- (void)setUpTableView
 {
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -81,13 +87,15 @@
     }
 }
 
--(void)setUpMenuItems
+- (void)setUpMenuItems
 {
-    
     self.menuItems = @[@"Today",@"Habits",@"Meals",@"Workouts",@"Settings"];
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+#pragma mark TableView Delegate and Datasource Methods
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0){
         
@@ -107,7 +115,7 @@
     }
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0){
         
@@ -123,14 +131,13 @@
     }
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.menuItems count]+2;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     NSArray *childViewContollers = [self childViewControllers];
     UIViewController *currentTopViewController = childViewContollers[0];
    
@@ -139,7 +146,6 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i + 2 inSection:0]];
         selectedCell.cellLabel.textColor = Gray_Color;
     }
-    
     if (indexPath.row == 2){
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Yellow_Color;
@@ -152,7 +158,6 @@
         [currentTopViewController removeFromParentViewController];
         [self addChildViewController:nvc];
         [self.containerView addSubview:nvc.view];
-        
     }
     else if (indexPath.row == 3) {
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
@@ -213,12 +218,27 @@
         [v.view removeFromSuperview];
         [v removeFromParentViewController];
     }
+    
     [UIView animateWithDuration:.3 animations:^{
         self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.center.y);
     }];
 }
 
--(void)animateMenu
+
+#pragma mark JJWMainViewControler Delegate Methods
+
+- (void)didDragWithMovment:(int)movement
+{
+    self.containerView.center = CGPointMake(self.containerView.center.x + movement, self.containerView.center.y);
+    if (self.containerView.center.x > (self.containerView.window.frame.size.width/2) + 250){
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2) + 250, self.containerView.window.center.y);
+    }
+    else if (self.containerView.center.x < (self.containerView.window.frame.size.width/2)){
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.window.center.y);
+    }
+}
+
+- (void)animateMenu
 {
     int move;
     if (self.containerView.frame.origin.x > 100){
@@ -233,20 +253,7 @@
     }];
 }
 
-
-
--(void)didDragWithMovment:(int)movement
-{
-    self.containerView.center = CGPointMake(self.containerView.center.x + movement, self.containerView.center.y);
-    if (self.containerView.center.x > (self.containerView.window.frame.size.width/2) + 250){
-        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2) + 250, self.containerView.window.center.y);
-    }
-    else if (self.containerView.center.x < (self.containerView.window.frame.size.width/2)){
-        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.window.center.y);
-    }
-}
-
--(void)animateMenuReverse
+- (void)animateMenuReverse
 {
     int move;
     if (self.containerView.frame.origin.x > 100){
