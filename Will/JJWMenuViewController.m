@@ -7,17 +7,17 @@
 //
 
 #import "JJWMenuViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "JJWMacros.h"
 #import "JJWMenuTableViewCell.h"
 #import "JJWMenuHeaderTableViewCell.h"
 #import "JJWMenuCircleTableViewCell.h"
-#import "JJWMainNavigationController.h"
-#import "JJWMainViewController.h"
-#import "JJWDietNavigationController.h"
-#import "JJWDietViewController.h"
-#import <QuartzCore/QuartzCore.h>
-#import "JJWMacros.h"
+#import "JJWTodayNavigationController.h"
+#import "JJWTodayViewController.h"
+#import "JJWHabitsNavigationController.h"
+#import "JJWHabitsViewController.h"
 
-@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate, JJWDietViewController, JJWMainViewControllerDlegate>
+@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate, JJWTodayViewControllerDelegate, JJWHabitsViewControllerDelegate>
 
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *menuItems;
@@ -45,9 +45,9 @@
 
 - (void)addTopViewController
 {
-    JJWMainViewController *homeViewController = [[JJWMainViewController alloc] init];
+    JJWTodayViewController *homeViewController = [[JJWTodayViewController alloc] init];
     homeViewController.delegate = self;
-    JJWMainNavigationController *homeNavContoller = [[JJWMainNavigationController alloc] initWithRootViewController:homeViewController];
+    JJWTodayNavigationController *homeNavContoller = [[JJWTodayNavigationController alloc] initWithRootViewController:homeViewController];
     homeNavContoller.view.frame = self.containerView.frame;
     
     [self addChildViewController:homeNavContoller];
@@ -150,8 +150,8 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Yellow_Color;
         
-        JJWMainViewController *vc = [[JJWMainViewController alloc] init];
-        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        JJWTodayViewController *vc = [[JJWTodayViewController alloc] init];
+        JJWTodayNavigationController *nvc = [[JJWTodayNavigationController alloc] initWithRootViewController:vc];
         vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
@@ -163,8 +163,8 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Blue_Color;
         
-        JJWMainViewController *vc = [[JJWMainViewController alloc] init];
-        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        JJWHabitsViewController *vc = [[JJWHabitsViewController alloc] init];
+        JJWHabitsNavigationController *nvc = [[JJWHabitsNavigationController alloc] initWithRootViewController:vc];
         vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
@@ -177,8 +177,8 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Green_Color;
         
-        JJWDietViewController *vc = [[JJWDietViewController alloc] init];
-        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        JJWTodayViewController *vc = [[JJWTodayViewController alloc] init];
+        JJWTodayNavigationController *nvc = [[JJWTodayNavigationController alloc] initWithRootViewController:vc];
         vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
@@ -191,8 +191,8 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Red_Color;
         
-        JJWMainViewController *vc = [[JJWMainViewController alloc] init];
-        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        JJWTodayViewController *vc = [[JJWTodayViewController alloc] init];
+        JJWTodayNavigationController *nvc = [[JJWTodayNavigationController alloc] initWithRootViewController:vc];
         vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
@@ -204,9 +204,9 @@
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
         selectedCell.cellLabel.textColor = Red_Color;
         
-        JJWMainViewController *vc = [[JJWMainViewController alloc] init];
+        JJWTodayViewController *vc = [[JJWTodayViewController alloc] init];
         vc.delegate = self;
-        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        JJWTodayNavigationController *nvc = [[JJWTodayNavigationController alloc] initWithRootViewController:vc];
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
         [currentTopViewController removeFromParentViewController];

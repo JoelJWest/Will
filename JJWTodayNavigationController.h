@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJWMainNavigationController : UINavigationController
+@interface JJWTodayNavigationController : UINavigationController
 
 @end

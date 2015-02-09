@@ -6,14 +6,13 @@
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
-#import "JJWMainViewController.h"
-#import "JJWMenuViewController.h"
+#import "JJWTodayViewController.h"
 
-@interface JJWMainViewController ()
+@interface JJWTodayViewController ()
 @property (nonatomic) CGPoint startTouch;
 @end
 
-@implementation JJWMainViewController
+@implementation JJWTodayViewController
 
 
 #pragma mark Initilization Methods

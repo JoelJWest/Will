@@ -15,6 +15,10 @@
 		2847B15A1A75EA050060D66B /* WillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B1591A75EA050060D66B /* WillTests.m */; };
 		2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */; };
 		2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */; };
+		380E15461A8931AB00D7B638 /* JJWHabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380E15441A8931AB00D7B638 /* JJWHabitsViewController.m */; };
+		380E15471A8931AB00D7B638 /* JJWHabitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */; };
+		380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */; };
+		380E154C1A8931CD00D7B638 /* JJWHabitsNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
 		38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */; };
 		38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */; };
@@ -40,14 +44,10 @@
 		38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */; };
 		38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */; };
 		38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */; };
-		38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */; };
-		38F5F40F1A80312000C2AF53 /* JJWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */; };
-		38F5F4131A80314F00C2AF53 /* JJWMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4111A80314F00C2AF53 /* JJWMainNavigationController.m */; };
-		38F5F4141A80314F00C2AF53 /* JJWMainNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4121A80314F00C2AF53 /* JJWMainNavigationController.xib */; };
-		38F5F4181A80356C00C2AF53 /* JJWDietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4161A80356C00C2AF53 /* JJWDietViewController.m */; };
-		38F5F4191A80356C00C2AF53 /* JJWDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4171A80356C00C2AF53 /* JJWDietViewController.xib */; };
-		38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */; };
-		38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */; };
+		38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */; };
+		38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */; };
+		38F5F4131A80314F00C2AF53 /* JJWTodayNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4111A80314F00C2AF53 /* JJWTodayNavigationController.m */; };
+		38F5F4141A80314F00C2AF53 /* JJWTodayNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F4121A80314F00C2AF53 /* JJWTodayNavigationController.xib */; };
 		38F870921A87252F0049199E /* JJWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F870911A87252F0049199E /* JJWCircleView.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +77,12 @@
 		2847B17A1A75F7C80060D66B /* JJWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMenuTableViewCell.m; path = ../JJWMenuTableViewCell.m; sourceTree = "<group>"; };
 		2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMenuTableViewCell.xib; path = ../JJWMenuTableViewCell.xib; sourceTree = "<group>"; };
 		28D073D61A88343F008EFE84 /* JJWMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JJWMacros.h; path = ../JJWMacros.h; sourceTree = "<group>"; };
+		380E15431A8931AB00D7B638 /* JJWHabitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitsViewController.h; sourceTree = "<group>"; };
+		380E15441A8931AB00D7B638 /* JJWHabitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitsViewController.m; sourceTree = "<group>"; };
+		380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitsViewController.xib; sourceTree = "<group>"; };
+		380E15481A8931CD00D7B638 /* JJWHabitsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitsNavigationController.h; sourceTree = "<group>"; };
+		380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitsNavigationController.m; sourceTree = "<group>"; };
+		380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitsNavigationController.xib; sourceTree = "<group>"; };
 		38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuViewController.h; sourceTree = "<group>"; };
 		38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuViewController.m; sourceTree = "<group>"; };
 		38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWMenuViewController.xib; sourceTree = "<group>"; };
@@ -105,18 +111,12 @@
 		38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
-		38F5F40B1A80312000C2AF53 /* JJWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMainViewController.h; path = ../JJWMainViewController.h; sourceTree = "<group>"; };
-		38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMainViewController.m; path = ../JJWMainViewController.m; sourceTree = "<group>"; };
-		38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMainViewController.xib; path = ../JJWMainViewController.xib; sourceTree = "<group>"; };
-		38F5F4101A80314F00C2AF53 /* JJWMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWMainNavigationController.h; path = ../JJWMainNavigationController.h; sourceTree = "<group>"; };
-		38F5F4111A80314F00C2AF53 /* JJWMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWMainNavigationController.m; path = ../JJWMainNavigationController.m; sourceTree = "<group>"; };
-		38F5F4121A80314F00C2AF53 /* JJWMainNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWMainNavigationController.xib; path = ../JJWMainNavigationController.xib; sourceTree = "<group>"; };
-		38F5F4151A80356C00C2AF53 /* JJWDietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWDietViewController.h; sourceTree = "<group>"; };
-		38F5F4161A80356C00C2AF53 /* JJWDietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWDietViewController.m; sourceTree = "<group>"; };
-		38F5F4171A80356C00C2AF53 /* JJWDietViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWDietViewController.xib; sourceTree = "<group>"; };
-		38F5F41A1A80359500C2AF53 /* JJWDietNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWDietNavigationController.h; path = ../JJWDietNavigationController.h; sourceTree = "<group>"; };
-		38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWDietNavigationController.m; path = ../JJWDietNavigationController.m; sourceTree = "<group>"; };
-		38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWDietNavigationController.xib; path = ../JJWDietNavigationController.xib; sourceTree = "<group>"; };
+		38F5F40B1A80312000C2AF53 /* JJWTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWTodayViewController.h; path = ../JJWTodayViewController.h; sourceTree = "<group>"; };
+		38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWTodayViewController.m; path = ../JJWTodayViewController.m; sourceTree = "<group>"; };
+		38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWTodayViewController.xib; path = ../JJWTodayViewController.xib; sourceTree = "<group>"; };
+		38F5F4101A80314F00C2AF53 /* JJWTodayNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWTodayNavigationController.h; path = ../JJWTodayNavigationController.h; sourceTree = "<group>"; };
+		38F5F4111A80314F00C2AF53 /* JJWTodayNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWTodayNavigationController.m; path = ../JJWTodayNavigationController.m; sourceTree = "<group>"; };
+		38F5F4121A80314F00C2AF53 /* JJWTodayNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWTodayNavigationController.xib; path = ../JJWTodayNavigationController.xib; sourceTree = "<group>"; };
 		38F870901A87252F0049199E /* JJWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWCircleView.h; sourceTree = "<group>"; };
 		38F870911A87252F0049199E /* JJWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,10 +207,10 @@
 				38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */,
 				38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */,
 				38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */,
-				38B4CC521A80294200B05CC4 /* Home ViewControllers */,
-				38B4CC511A80293600B05CC4 /* Diet ViewConrollers */,
-				38B4CC501A80292C00B05CC4 /* Workout ViewControllers */,
-				38B4CC4F1A80291900B05CC4 /* Habit ViewControllers */,
+				38B4CC521A80294200B05CC4 /* TodayViewControllers */,
+				38B4CC4F1A80291900B05CC4 /* HabitsViewControllers */,
+				38B4CC511A80293600B05CC4 /* MealsViewControllers */,
+				38B4CC501A80292C00B05CC4 /* WorkoutsViewControllers */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -257,44 +257,44 @@
 			name = "TableView Files";
 			sourceTree = "<group>";
 		};
-		38B4CC4F1A80291900B05CC4 /* Habit ViewControllers */ = {
+		38B4CC4F1A80291900B05CC4 /* HabitsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				380E15481A8931CD00D7B638 /* JJWHabitsNavigationController.h */,
+				380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */,
+				380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */,
+				380E15431A8931AB00D7B638 /* JJWHabitsViewController.h */,
+				380E15441A8931AB00D7B638 /* JJWHabitsViewController.m */,
+				380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */,
 			);
-			name = "Habit ViewControllers";
+			name = HabitsViewControllers;
 			sourceTree = "<group>";
 		};
-		38B4CC501A80292C00B05CC4 /* Workout ViewControllers */ = {
+		38B4CC501A80292C00B05CC4 /* WorkoutsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Workout ViewControllers";
+			name = WorkoutsViewControllers;
 			sourceTree = "<group>";
 		};
-		38B4CC511A80293600B05CC4 /* Diet ViewConrollers */ = {
+		38B4CC511A80293600B05CC4 /* MealsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				38F5F41A1A80359500C2AF53 /* JJWDietNavigationController.h */,
-				38F5F41B1A80359500C2AF53 /* JJWDietNavigationController.m */,
-				38F5F41C1A80359500C2AF53 /* JJWDietNavigationController.xib */,
-				38F5F4151A80356C00C2AF53 /* JJWDietViewController.h */,
-				38F5F4161A80356C00C2AF53 /* JJWDietViewController.m */,
-				38F5F4171A80356C00C2AF53 /* JJWDietViewController.xib */,
 			);
-			name = "Diet ViewConrollers";
+			name = MealsViewControllers;
 			sourceTree = "<group>";
 		};
-		38B4CC521A80294200B05CC4 /* Home ViewControllers */ = {
+		38B4CC521A80294200B05CC4 /* TodayViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				38F5F4101A80314F00C2AF53 /* JJWMainNavigationController.h */,
-				38F5F4111A80314F00C2AF53 /* JJWMainNavigationController.m */,
-				38F5F4121A80314F00C2AF53 /* JJWMainNavigationController.xib */,
-				38F5F40B1A80312000C2AF53 /* JJWMainViewController.h */,
-				38F5F40C1A80312000C2AF53 /* JJWMainViewController.m */,
-				38F5F40D1A80312000C2AF53 /* JJWMainViewController.xib */,
+				38F5F4101A80314F00C2AF53 /* JJWTodayNavigationController.h */,
+				38F5F4111A80314F00C2AF53 /* JJWTodayNavigationController.m */,
+				38F5F4121A80314F00C2AF53 /* JJWTodayNavigationController.xib */,
+				38F5F40B1A80312000C2AF53 /* JJWTodayViewController.h */,
+				38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */,
+				38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */,
 			);
-			name = "Home ViewControllers";
+			name = TodayViewControllers;
 			sourceTree = "<group>";
 		};
 		38B5AAB31A85DE7A0088D13F /* Fonts */ = {
@@ -420,23 +420,23 @@
 			files = (
 				38B5AACB1A85DFDE0088D13F /* Roboto-Bold.ttf in Resources */,
 				2847B14E1A75EA050060D66B /* LaunchScreen.xib in Resources */,
-				38F5F4141A80314F00C2AF53 /* JJWMainNavigationController.xib in Resources */,
+				38F5F4141A80314F00C2AF53 /* JJWTodayNavigationController.xib in Resources */,
 				38B5AAD71A85DFDE0088D13F /* RobotoCondensed-Italic.ttf in Resources */,
 				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
 				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
-				38F5F4191A80356C00C2AF53 /* JJWDietViewController.xib in Resources */,
-				38F5F40F1A80312000C2AF53 /* JJWMainViewController.xib in Resources */,
+				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
 				38B5AAD01A85DFDE0088D13F /* Roboto-Medium.ttf in Resources */,
 				38B5AACA1A85DFDE0088D13F /* Roboto-BlackItalic.ttf in Resources */,
 				38B5AAAD1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.xib in Resources */,
-				38F5F41E1A80359500C2AF53 /* JJWDietNavigationController.xib in Resources */,
 				38B5AACE1A85DFDE0088D13F /* Roboto-Light.ttf in Resources */,
+				380E154C1A8931CD00D7B638 /* JJWHabitsNavigationController.xib in Resources */,
 				2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */,
 				38B5AAD21A85DFDE0088D13F /* Roboto-Regular.ttf in Resources */,
+				380E15471A8931AB00D7B638 /* JJWHabitsViewController.xib in Resources */,
 				38B5AACF1A85DFDE0088D13F /* Roboto-LightItalic.ttf in Resources */,
 				38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */,
 				38B5AAD51A85DFDE0088D13F /* RobotoCondensed-Bold.ttf in Resources */,
@@ -464,17 +464,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F5F41D1A80359500C2AF53 /* JJWDietNavigationController.m in Sources */,
-				38F5F4181A80356C00C2AF53 /* JJWDietViewController.m in Sources */,
+				380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */,
 				38F870921A87252F0049199E /* JJWCircleView.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
-				38F5F40E1A80312000C2AF53 /* JJWMainViewController.m in Sources */,
+				38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */,
 				2847B1431A75EA050060D66B /* Will.xcdatamodeld in Sources */,
 				38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */,
 				38B5AAB11A85DD160088D13F /* JJWMenuCircleTableViewCell.m in Sources */,
 				2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */,
-				38F5F4131A80314F00C2AF53 /* JJWMainNavigationController.m in Sources */,
+				38F5F4131A80314F00C2AF53 /* JJWTodayNavigationController.m in Sources */,
 				2847B13D1A75EA050060D66B /* main.m in Sources */,
+				380E15461A8931AB00D7B638 /* JJWHabitsViewController.m in Sources */,
 				38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
