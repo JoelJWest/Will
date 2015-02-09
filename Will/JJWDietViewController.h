@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJWDietViewController : UIViewController
+@protocol JJWDietViewController <NSObject>
+-(void)didDragWithMovment:(int)movement;
+-(void)animateMenu;
+-(void)animateMenuReverse;
+@end
 
+@interface JJWDietViewController : UIViewController
+@property id <JJWDietViewController> delegate;
 @end

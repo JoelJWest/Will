@@ -11,6 +11,6 @@
 @interface JJWMenuViewController : UIViewController
 
 -(instancetype)initFirstTime;
--(void)menuAnimation;
+-(void)animateMenuOut;
 
 @end

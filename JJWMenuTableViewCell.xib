@@ -37,7 +37,7 @@
             <connections>
                 <outlet property="cellLabel" destination="0PQ-zR-f6M" id="UKu-z6-ugj"/>
             </connections>
-            <point key="canvasLocation" x="286" y="339"/>
+            <point key="canvasLocation" x="-35" y="-253"/>
         </tableViewCell>
     </objects>
 </document>

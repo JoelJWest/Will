@@ -17,7 +17,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JJWMacros.h"
 
-@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate, JJWMainViewControllerDlegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *menuItems;
 @property (nonatomic) IBOutlet UIView *containerView;
@@ -40,6 +40,7 @@
 -(void)addTopViewController
 {
     JJWMainViewController *homeViewController = [[JJWMainViewController alloc] init];
+    homeViewController.delegate = self;
     JJWMainNavigationController *homeNavContoller = [[JJWMainNavigationController alloc] initWithRootViewController:homeViewController];
     homeNavContoller.view.frame = self.containerView.frame;
     
@@ -145,6 +146,7 @@
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
         [currentTopViewController removeFromParentViewController];
@@ -158,6 +160,7 @@
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
         [currentTopViewController removeFromParentViewController];
@@ -171,6 +174,7 @@
         
         JJWDietViewController *vc = [[JJWDietViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
         [currentTopViewController removeFromParentViewController];
@@ -184,6 +188,7 @@
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
         [currentTopViewController removeFromParentViewController];
@@ -195,6 +200,7 @@
         selectedCell.cellLabel.textColor = Red_Color;
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
+        vc.delegate = self;
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
@@ -207,20 +213,51 @@
         [v.view removeFromSuperview];
         [v removeFromParentViewController];
     }
+    [UIView animateWithDuration:.3 animations:^{
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.center.y);
+    }];
 }
 
--(void)menuAnimation
+-(void)animateMenu
 {
     int move;
-    if (self.containerView.frame.origin.x > 10){
-        move = -250;
+    if (self.containerView.frame.origin.x > 100){
+        move = 250;
+    }
+    else{
+        move = 0;
+    }
+    
+    [UIView animateWithDuration:.3 animations:^{
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2)+move, self.containerView.center.y);
+    }];
+}
+
+
+
+-(void)didDragWithMovment:(int)movement
+{
+    self.containerView.center = CGPointMake(self.containerView.center.x + movement, self.containerView.center.y);
+    if (self.containerView.center.x > (self.containerView.window.frame.size.width/2) + 250){
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2) + 250, self.containerView.window.center.y);
+    }
+    else if (self.containerView.center.x < (self.containerView.window.frame.size.width/2)){
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2), self.containerView.window.center.y);
+    }
+}
+
+-(void)animateMenuReverse
+{
+    int move;
+    if (self.containerView.frame.origin.x > 100){
+        move = 0;
     }
     else{
         move = 250;
     }
     
     [UIView animateWithDuration:.3 animations:^{
-        self.containerView.center = CGPointMake(self.containerView.center.x + move, self.containerView.center.y);
+        self.containerView.center = CGPointMake((self.containerView.window.frame.size.width/2)+move, self.containerView.center.y);
     }];
 }
 

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJWMainViewController : UIViewController
+@protocol JJWMainViewControllerDlegate <NSObject>
+-(void)didDragWithMovment:(int)movement;
+-(void)animateMenu;
+-(void)animateMenuReverse;
+@end
 
+@interface JJWMainViewController : UIViewController
+@property id <JJWMainViewControllerDlegate> delegate;
 @end
