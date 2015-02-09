@@ -15,6 +15,7 @@
 #import "JJWDietNavigationController.h"
 #import "JJWDietViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "JJWMacros.h"
 
 @interface JJWMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView *tableView;
@@ -135,10 +136,12 @@
     for (int i = 0; i < 5; i++){
         
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i + 2 inSection:0]];
-        selectedCell.cellLabel.textColor = [UIColor colorWithRed:0.185447 green:0.185442 blue:0.185445 alpha:1];
+        selectedCell.cellLabel.textColor = Gray_Color;
     }
-                                                                      
+    
     if (indexPath.row == 2){
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        selectedCell.cellLabel.textColor = Yellow_Color;
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
@@ -150,6 +153,8 @@
         
     }
     else if (indexPath.row == 3) {
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        selectedCell.cellLabel.textColor = Blue_Color;
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
@@ -162,7 +167,7 @@
     else if (indexPath.row == 4) {
         
         JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-        selectedCell.cellLabel.textColor = [UIColor orangeColor];
+        selectedCell.cellLabel.textColor = Green_Color;
         
         JJWDietViewController *vc = [[JJWDietViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
@@ -172,7 +177,22 @@
         [self addChildViewController:nvc];
         [self.containerView addSubview:nvc.view];
     }
+    else if (indexPath.row == 5) {
+        
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        selectedCell.cellLabel.textColor = Red_Color;
+        
+        JJWMainViewController *vc = [[JJWMainViewController alloc] init];
+        JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
+        nvc.view.frame = self.containerView.window.frame;
+        [currentTopViewController.view removeFromSuperview];
+        [currentTopViewController removeFromParentViewController];
+        [self addChildViewController:nvc];
+        [self.containerView addSubview:nvc.view];
+    }
     else{
+        JJWMenuTableViewCell *selectedCell = (JJWMenuTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        selectedCell.cellLabel.textColor = Red_Color;
         
         JJWMainViewController *vc = [[JJWMainViewController alloc] init];
         JJWMainNavigationController *nvc = [[JJWMainNavigationController alloc] initWithRootViewController:vc];
