@@ -7,9 +7,11 @@
 //
 
 #import "JJWTodayViewController.h"
+#import "JJWMenuGestureRecognizer.h"
 
 @interface JJWTodayViewController ()
 @property (nonatomic) CGPoint startTouch;
+@property (nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation JJWTodayViewController
@@ -25,13 +27,20 @@
 
 - (void)addMenuButtonWithGesture
 {
-    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [menuButton setBackgroundImage:[UIImage imageNamed:@"menuIcon.png"] forState:UIControlStateNormal];
+    menuButton.frame = CGRectMake(0, 0, 30, 30);
     [menuButton addTarget:self action:@selector(menuAction) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
     
-    UIPanGestureRecognizer *panRecognizer;
-    panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
-    panRecognizer.cancelsTouchesInView = YES;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
+ 
+    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
+    panRecognizer.cancelsTouchesInView = NO;
+    
+    JJWMenuGestureRecognizer *menuPanGesture = [[JJWMenuGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
+    menuPanGesture.cancelsTouchesInView = NO;
+    
+    [self.tableView addGestureRecognizer:menuPanGesture];
     [menuButton addGestureRecognizer:panRecognizer];
 }
 
@@ -88,6 +97,5 @@
     [super touchesEnded:touches withEvent:event];
     [self.delegate animateMenu];
 }
-
 
 @end

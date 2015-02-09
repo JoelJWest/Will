@@ -19,6 +19,8 @@
 		380E15471A8931AB00D7B638 /* JJWHabitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */; };
 		380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */; };
 		380E154C1A8931CD00D7B638 /* JJWHabitsNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */; };
+		3842C7A91A894E45004334E8 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3842C7A81A894E44004334E8 /* menuIcon.png */; };
+		3842C7AE1A8951F9004334E8 /* JJWMenuGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
 		38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */; };
 		38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */; };
@@ -83,6 +85,9 @@
 		380E15481A8931CD00D7B638 /* JJWHabitsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitsNavigationController.h; sourceTree = "<group>"; };
 		380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitsNavigationController.m; sourceTree = "<group>"; };
 		380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitsNavigationController.xib; sourceTree = "<group>"; };
+		3842C7A81A894E44004334E8 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
+		3842C7AC1A8951F9004334E8 /* JJWMenuGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuGestureRecognizer.h; sourceTree = "<group>"; };
+		3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuGestureRecognizer.m; sourceTree = "<group>"; };
 		38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuViewController.h; sourceTree = "<group>"; };
 		38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuViewController.m; sourceTree = "<group>"; };
 		38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWMenuViewController.xib; sourceTree = "<group>"; };
@@ -162,6 +167,7 @@
 		2847B1391A75EA050060D66B /* Will */ = {
 			isa = PBXGroup;
 			children = (
+				3842C7AB1A8951D8004334E8 /* Utilities */,
 				2847B1631A75EAE90060D66B /* View Controllers */,
 				2847B1671A75EB200060D66B /* TableView Files */,
 				2847B1661A75EB060060D66B /* Assets */,
@@ -175,6 +181,7 @@
 		2847B13A1A75EA050060D66B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3842C7AA1A894E4A004334E8 /* Icons */,
 				38B5AAB31A85DE7A0088D13F /* Fonts */,
 				2847B13B1A75EA050060D66B /* Info.plist */,
 				2847B13C1A75EA050060D66B /* main.m */,
@@ -255,6 +262,23 @@
 				2847B17B1A75F7C80060D66B /* JJWMenuTableViewCell.xib */,
 			);
 			name = "TableView Files";
+			sourceTree = "<group>";
+		};
+		3842C7AA1A894E4A004334E8 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3842C7A81A894E44004334E8 /* menuIcon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		3842C7AB1A8951D8004334E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3842C7AC1A8951F9004334E8 /* JJWMenuGestureRecognizer.h */,
+				3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		38B4CC4F1A80291900B05CC4 /* HabitsViewControllers */ = {
@@ -425,6 +449,7 @@
 				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
+				3842C7A91A894E45004334E8 /* menuIcon.png in Resources */,
 				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
@@ -470,6 +495,7 @@
 				38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */,
 				2847B1431A75EA050060D66B /* Will.xcdatamodeld in Sources */,
 				38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */,
+				3842C7AE1A8951F9004334E8 /* JJWMenuGestureRecognizer.m in Sources */,
 				38B5AAB11A85DD160088D13F /* JJWMenuCircleTableViewCell.m in Sources */,
 				2847B17C1A75F7C80060D66B /* JJWMenuTableViewCell.m in Sources */,
 				38F5F4131A80314F00C2AF53 /* JJWTodayNavigationController.m in Sources */,
