@@ -19,6 +19,9 @@
 		380E15471A8931AB00D7B638 /* JJWHabitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */; };
 		380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */; };
 		380E154C1A8931CD00D7B638 /* JJWHabitsNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */; };
+		381524961A8ABDEE00715A81 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 381524931A8ABDEE00715A81 /* License.txt */; };
+		381524971A8ABDEE00715A81 /* Moon Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 381524941A8ABDEE00715A81 /* Moon Bold.otf */; };
+		381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 381524951A8ABDEE00715A81 /* Moon Light.otf */; };
 		3842C7A91A894E45004334E8 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3842C7A81A894E44004334E8 /* menuIcon.png */; };
 		3842C7AE1A8951F9004334E8 /* JJWMenuGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
@@ -85,6 +88,9 @@
 		380E15481A8931CD00D7B638 /* JJWHabitsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitsNavigationController.h; sourceTree = "<group>"; };
 		380E15491A8931CD00D7B638 /* JJWHabitsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitsNavigationController.m; sourceTree = "<group>"; };
 		380E154A1A8931CD00D7B638 /* JJWHabitsNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitsNavigationController.xib; sourceTree = "<group>"; };
+		381524931A8ABDEE00715A81 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		381524941A8ABDEE00715A81 /* Moon Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Bold.otf"; sourceTree = "<group>"; };
+		381524951A8ABDEE00715A81 /* Moon Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Light.otf"; sourceTree = "<group>"; };
 		3842C7A81A894E44004334E8 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		3842C7AC1A8951F9004334E8 /* JJWMenuGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuGestureRecognizer.h; sourceTree = "<group>"; };
 		3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuGestureRecognizer.m; sourceTree = "<group>"; };
@@ -264,6 +270,16 @@
 			name = "TableView Files";
 			sourceTree = "<group>";
 		};
+		381524921A8ABDEE00715A81 /* MoonTypeface */ = {
+			isa = PBXGroup;
+			children = (
+				381524931A8ABDEE00715A81 /* License.txt */,
+				381524941A8ABDEE00715A81 /* Moon Bold.otf */,
+				381524951A8ABDEE00715A81 /* Moon Light.otf */,
+			);
+			path = MoonTypeface;
+			sourceTree = "<group>";
+		};
 		3842C7AA1A894E4A004334E8 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +340,7 @@
 		38B5AAB31A85DE7A0088D13F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				381524921A8ABDEE00715A81 /* MoonTypeface */,
 				38B5AAB41A85DFDE0088D13F /* roboto */,
 			);
 			name = Fonts;
@@ -449,8 +466,10 @@
 				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
+				381524961A8ABDEE00715A81 /* License.txt in Resources */,
 				3842C7A91A894E45004334E8 /* menuIcon.png in Resources */,
 				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
+				381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
@@ -471,6 +490,7 @@
 				38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */,
 				38B5AAD41A85DFDE0088D13F /* Roboto-ThinItalic.ttf in Resources */,
 				38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */,
+				381524971A8ABDEE00715A81 /* Moon Bold.otf in Resources */,
 				38B5AAC91A85DFDE0088D13F /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
