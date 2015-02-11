@@ -11,7 +11,7 @@
 #import "JJWHabitCardTableViewCell.h"
 #import "JJWMenuGestureRecognizer.h"
 
-@interface JJWHabitsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface JJWHabitsViewController () <UITableViewDataSource, UITableViewDelegate, JJWHabitCardTableViewCellDelegate>
 @property (nonatomic) CGPoint startTouch;
 @property (nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -132,6 +132,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     JJWHabitCardTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CardCell"];
+    cell.cellIndex = indexPath;
+    cell.delegate = self;
 
     return cell;
 }
@@ -139,6 +141,19 @@
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 280;
+}
+
+- (void)didPressEditButtonOnCardAt:(NSIndexPath *)indexPath
+{
+    NSLog(@"Cell at %@ was selected",indexPath);
+    JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:.5];
+    [UIView transitionFromView:selectedCell.cardBackground toView:selectedCell.cardBackgroundEdit duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
+    [UIView commitAnimations];
+    
+    
 }
 @end
 

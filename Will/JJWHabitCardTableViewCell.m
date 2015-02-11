@@ -23,4 +23,9 @@
     self.cardBackground.layer.shadowPath = shadowPath;
 }
 
+- (IBAction)editButtonPressed:(id)sender
+{
+    [self.delegate didPressEditButtonOnCardAt:self.cellIndex];
+}
+
 @end
