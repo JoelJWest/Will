@@ -16,16 +16,11 @@
     self.cardBackground.layer.shadowColor = [[UIColor blackColor] CGColor];
     self.cardBackground.layer.shadowRadius = 4.f;
     self.cardBackground.layer.shadowOpacity = .25;
+    
     CGRect shadowFrame = self.cardBackground.layer.bounds;
     CGPathRef shadowPath = [UIBezierPath bezierPathWithRect:shadowFrame].CGPath;
     
     self.cardBackground.layer.shadowPath = shadowPath;
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

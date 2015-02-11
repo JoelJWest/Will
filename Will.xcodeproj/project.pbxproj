@@ -27,6 +27,9 @@
 		381524A41A8AE22100715A81 /* JJWHabitCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381524A21A8AE22100715A81 /* JJWHabitCardTableViewCell.xib */; };
 		3842C7A91A894E45004334E8 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3842C7A81A894E44004334E8 /* menuIcon.png */; };
 		3842C7AE1A8951F9004334E8 /* JJWMenuGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */; };
+		38531B5B1A8B13BE00475DBB /* EditIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38531B5A1A8B13BE00475DBB /* EditIcon.png */; };
+		38531B5E1A8B189C00475DBB /* DayButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 38531B5C1A8B189C00475DBB /* DayButtonSelected.png */; };
+		38531B5F1A8B189C00475DBB /* DayButtonUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 38531B5D1A8B189C00475DBB /* DayButtonUnselected.png */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
 		38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */; };
 		38B5AAAC1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B5AAAA1A85DCFD0088D13F /* JJWMenuHeaderTableViewCell.m */; };
@@ -101,6 +104,9 @@
 		3842C7A81A894E44004334E8 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		3842C7AC1A8951F9004334E8 /* JJWMenuGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuGestureRecognizer.h; sourceTree = "<group>"; };
 		3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuGestureRecognizer.m; sourceTree = "<group>"; };
+		38531B5A1A8B13BE00475DBB /* EditIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EditIcon.png; sourceTree = "<group>"; };
+		38531B5C1A8B189C00475DBB /* DayButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DayButtonSelected.png; sourceTree = "<group>"; };
+		38531B5D1A8B189C00475DBB /* DayButtonUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DayButtonUnselected.png; sourceTree = "<group>"; };
 		38B4CC531A80297100B05CC4 /* JJWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuViewController.h; sourceTree = "<group>"; };
 		38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuViewController.m; sourceTree = "<group>"; };
 		38B4CC551A80297100B05CC4 /* JJWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWMenuViewController.xib; sourceTree = "<group>"; };
@@ -290,6 +296,9 @@
 		3842C7AA1A894E4A004334E8 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				38531B5C1A8B189C00475DBB /* DayButtonSelected.png */,
+				38531B5D1A8B189C00475DBB /* DayButtonUnselected.png */,
+				38531B5A1A8B13BE00475DBB /* EditIcon.png */,
 				3842C7A81A894E44004334E8 /* menuIcon.png */,
 				381524991A8ACFB900715A81 /* HamburgerIconBlue.png */,
 			);
@@ -480,10 +489,12 @@
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
 				381524961A8ABDEE00715A81 /* License.txt in Resources */,
+				38531B5F1A8B189C00475DBB /* DayButtonUnselected.png in Resources */,
 				3842C7A91A894E45004334E8 /* menuIcon.png in Resources */,
 				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
 				381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
+				38531B5B1A8B13BE00475DBB /* EditIcon.png in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
 				38B5AAD01A85DFDE0088D13F /* Roboto-Medium.ttf in Resources */,
@@ -502,6 +513,7 @@
 				38B5AAC81A85DFDE0088D13F /* Apache License.txt in Resources */,
 				38B4CC571A80297100B05CC4 /* JJWMenuViewController.xib in Resources */,
 				38B5AAD41A85DFDE0088D13F /* Roboto-ThinItalic.ttf in Resources */,
+				38531B5E1A8B189C00475DBB /* DayButtonSelected.png in Resources */,
 				38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */,
 				381524971A8ABDEE00715A81 /* Moon Bold.otf in Resources */,
 				38B5AAC91A85DFDE0088D13F /* Roboto-Black.ttf in Resources */,
