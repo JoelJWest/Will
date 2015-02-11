@@ -64,14 +64,19 @@
                         <constraint firstAttribute="trailing" secondItem="GoZ-EO-lGM" secondAttribute="trailing" constant="8" id="ryO-q2-fY9"/>
                     </constraints>
                 </view>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-zS-unE">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-zS-unE">
                     <rect key="frame" x="280" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="00I-iu-jRV"/>
                         <constraint firstAttribute="width" constant="40" id="K9j-7a-g69"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="W" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ug-lA-U1T">
@@ -84,64 +89,94 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-tm-sPr">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-tm-sPr">
                     <rect key="frame" x="8" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="969-1M-KuC"/>
                         <constraint firstAttribute="height" constant="40" id="HPG-bO-rDK"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="S" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwx-e3-IbK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwx-e3-IbK">
                     <rect key="frame" x="100" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="NIW-h2-GOb"/>
                         <constraint firstAttribute="width" constant="40" id="riX-Yb-icp"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="M" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-31-uM0">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-31-uM0">
                     <rect key="frame" x="190" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="fed-bZ-yOj"/>
                         <constraint firstAttribute="height" constant="40" id="qju-0A-TUw"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="T" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAH-ix-P6M">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAH-ix-P6M">
                     <rect key="frame" x="371" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="I9g-tr-9o1"/>
                         <constraint firstAttribute="width" constant="40" id="wMh-hp-xO8"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="T" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEw-8r-GlK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEw-8r-GlK">
                     <rect key="frame" x="461" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="50H-Wc-mSt"/>
                         <constraint firstAttribute="height" constant="40" id="Uyz-vC-2wF"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="F" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu9-mi-r3Q">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu9-mi-r3Q">
                     <rect key="frame" x="552" y="230" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="SaH-eA-ahC"/>
                         <constraint firstAttribute="width" constant="40" id="rWa-Aw-CbA"/>
                     </constraints>
-                    <state key="normal" backgroundImage="DayButtonUnselected.png">
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                    <state key="normal" title="S" backgroundImage="DayButtonUnselected.png">
+                        <color key="titleColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="DayButtonSelected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8k-u0-mCQ">
@@ -195,76 +230,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUk-jb-7K7">
-                    <rect key="frame" x="285" y="236" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="Vh6-Ae-1RU"/>
-                        <constraint firstAttribute="height" constant="30" id="yHE-XM-vXh"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYO-b2-mdI">
-                    <rect key="frame" x="376" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="6nz-ik-FE3"/>
-                        <constraint firstAttribute="width" constant="30" id="EhM-5g-hFq"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1x-Id-6zb">
-                    <rect key="frame" x="467" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="rjs-2e-caU"/>
-                        <constraint firstAttribute="height" constant="30" id="zcE-fP-w7U"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DF-wq-78X">
-                    <rect key="frame" x="557" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="I2D-P8-3op"/>
-                        <constraint firstAttribute="width" constant="30" id="ZiR-cE-Ood"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-at-Y3j">
-                    <rect key="frame" x="195" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="CCX-L2-cNS"/>
-                        <constraint firstAttribute="height" constant="30" id="Ryn-WJ-gqO"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-VE-tLH">
-                    <rect key="frame" x="105" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="KfP-xC-Z0t"/>
-                        <constraint firstAttribute="height" constant="30" id="bOZ-j9-06K"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etc-mQ-D1x">
-                    <rect key="frame" x="13" y="235" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="DOc-om-dip"/>
-                        <constraint firstAttribute="height" constant="30" id="xfN-gA-Pe3"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
-                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIZ-dq-zTy">
                     <rect key="frame" x="8" y="77" width="584" height="102"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,16 +244,11 @@
                 <constraint firstAttribute="trailing" secondItem="Oaw-AX-gN2" secondAttribute="trailing" constant="8" id="2On-2E-wah"/>
                 <constraint firstItem="sa0-zS-unE" firstAttribute="leading" secondItem="7FV-60-iSD" secondAttribute="trailing" id="558-X0-weu"/>
                 <constraint firstItem="Zu9-mi-r3Q" firstAttribute="leading" secondItem="IPB-Ir-mbq" secondAttribute="trailing" id="8we-kZ-bke"/>
-                <constraint firstItem="etc-mQ-D1x" firstAttribute="centerY" secondItem="Zmd-tm-sPr" secondAttribute="centerY" id="9f0-jJ-QKC"/>
-                <constraint firstItem="T1x-Id-6zb" firstAttribute="centerY" secondItem="bEw-8r-GlK" secondAttribute="centerY" id="C0M-22-DjU"/>
-                <constraint firstItem="Vwx-e3-IbK" firstAttribute="centerX" secondItem="Wu8-VE-tLH" secondAttribute="centerX" id="CPL-vN-OYP"/>
                 <constraint firstItem="7FV-60-iSD" firstAttribute="leading" secondItem="pjr-31-uM0" secondAttribute="trailing" constant="-1" id="Ciy-Xc-xsO"/>
                 <constraint firstItem="sAH-ix-P6M" firstAttribute="leading" secondItem="2sm-PA-tKg" secondAttribute="trailing" id="DHy-ou-dSR"/>
                 <constraint firstItem="7ug-lA-U1T" firstAttribute="leading" secondItem="FfL-a2-Ex6" secondAttribute="leading" constant="8" id="DWj-1u-Cis"/>
-                <constraint firstItem="T1x-Id-6zb" firstAttribute="centerX" secondItem="bEw-8r-GlK" secondAttribute="centerX" constant="1" id="Dhr-Oh-iPX"/>
                 <constraint firstItem="L5i-nB-s1w" firstAttribute="leading" secondItem="FfL-a2-Ex6" secondAttribute="leading" id="EVj-eh-wQ1"/>
                 <constraint firstItem="D8k-u0-mCQ" firstAttribute="width" secondItem="2sm-PA-tKg" secondAttribute="width" id="GD4-ww-jUc"/>
-                <constraint firstItem="7MM-at-Y3j" firstAttribute="centerY" secondItem="pjr-31-uM0" secondAttribute="centerY" id="GY2-ST-FXw"/>
                 <constraint firstAttribute="bottom" secondItem="IPB-Ir-mbq" secondAttribute="bottom" constant="14" id="HeL-9W-Wrc"/>
                 <constraint firstAttribute="trailing" secondItem="Zu9-mi-r3Q" secondAttribute="trailing" constant="8" id="Io6-z5-WTG"/>
                 <constraint firstItem="kIZ-dq-zTy" firstAttribute="leading" secondItem="FfL-a2-Ex6" secondAttribute="leading" constant="8" id="Jqq-2Q-gnb"/>
@@ -297,13 +257,10 @@
                 <constraint firstItem="Oaw-AX-gN2" firstAttribute="leading" secondItem="FfL-a2-Ex6" secondAttribute="leading" constant="8" id="Ngb-ho-ect"/>
                 <constraint firstItem="D8k-u0-mCQ" firstAttribute="leading" secondItem="Zmd-tm-sPr" secondAttribute="trailing" constant="1" id="PEz-mi-uDw"/>
                 <constraint firstItem="D8k-u0-mCQ" firstAttribute="width" secondItem="7FV-60-iSD" secondAttribute="width" id="RMd-LZ-GBI"/>
-                <constraint firstItem="zUk-jb-7K7" firstAttribute="centerY" secondItem="sa0-zS-unE" secondAttribute="centerY" constant="1" id="SGI-cY-74Z"/>
-                <constraint firstItem="sAH-ix-P6M" firstAttribute="centerX" secondItem="qYO-b2-mdI" secondAttribute="centerX" id="SZZ-7K-1de"/>
                 <constraint firstAttribute="bottom" secondItem="Zu9-mi-r3Q" secondAttribute="bottom" constant="10" id="Skk-JA-fo5"/>
                 <constraint firstItem="Pnl-7o-Iec" firstAttribute="leading" secondItem="sAH-ix-P6M" secondAttribute="trailing" id="Tns-Bu-TB0"/>
                 <constraint firstAttribute="bottom" secondItem="2sm-PA-tKg" secondAttribute="bottom" constant="14" id="ULc-Js-hUP"/>
                 <constraint firstItem="Zu9-mi-r3Q" firstAttribute="top" secondItem="Oaw-AX-gN2" secondAttribute="bottom" constant="7" id="X8Z-jB-enN"/>
-                <constraint firstItem="sAH-ix-P6M" firstAttribute="centerY" secondItem="qYO-b2-mdI" secondAttribute="centerY" id="XPc-8Z-9h3"/>
                 <constraint firstItem="Vwx-e3-IbK" firstAttribute="leading" secondItem="D8k-u0-mCQ" secondAttribute="trailing" id="Xds-Wg-odz"/>
                 <constraint firstAttribute="bottom" secondItem="sa0-zS-unE" secondAttribute="bottom" constant="10" id="Y2x-Wk-Mnk"/>
                 <constraint firstAttribute="bottom" secondItem="Vwx-e3-IbK" secondAttribute="bottom" constant="10" id="YI9-ca-DO6"/>
@@ -311,9 +268,6 @@
                 <constraint firstItem="2sm-PA-tKg" firstAttribute="leading" secondItem="sa0-zS-unE" secondAttribute="trailing" id="YiK-Uv-9T6"/>
                 <constraint firstItem="7ug-lA-U1T" firstAttribute="top" secondItem="L5i-nB-s1w" secondAttribute="bottom" constant="4" id="aSf-ba-Kqz"/>
                 <constraint firstAttribute="bottom" secondItem="bEw-8r-GlK" secondAttribute="bottom" constant="10" id="aat-h5-eS7"/>
-                <constraint firstItem="9DF-wq-78X" firstAttribute="centerY" secondItem="Zu9-mi-r3Q" secondAttribute="centerY" id="bL4-R1-Iva"/>
-                <constraint firstItem="7MM-at-Y3j" firstAttribute="centerX" secondItem="pjr-31-uM0" secondAttribute="centerX" id="cAz-AH-xox"/>
-                <constraint firstItem="Vwx-e3-IbK" firstAttribute="centerY" secondItem="Wu8-VE-tLH" secondAttribute="centerY" id="cOO-99-I5l"/>
                 <constraint firstAttribute="bottom" secondItem="D8k-u0-mCQ" secondAttribute="bottom" constant="14" id="cf5-FJ-YVP"/>
                 <constraint firstItem="Zu9-mi-r3Q" firstAttribute="top" secondItem="kIZ-dq-zTy" secondAttribute="bottom" constant="51" id="dm9-Pv-Wfb"/>
                 <constraint firstAttribute="bottom" secondItem="pjr-31-uM0" secondAttribute="bottom" constant="10" id="eQA-TK-EZJ"/>
@@ -329,16 +283,14 @@
                 <constraint firstItem="pjr-31-uM0" firstAttribute="leading" secondItem="3Ko-v5-w00" secondAttribute="trailing" id="pdr-fe-q5t"/>
                 <constraint firstAttribute="bottom" secondItem="3Ko-v5-w00" secondAttribute="bottom" constant="14" id="rZL-kG-agX"/>
                 <constraint firstItem="IPB-Ir-mbq" firstAttribute="leading" secondItem="bEw-8r-GlK" secondAttribute="trailing" id="rrX-39-ukN"/>
-                <constraint firstItem="9DF-wq-78X" firstAttribute="centerX" secondItem="Zu9-mi-r3Q" secondAttribute="centerX" id="ywS-X8-mOK"/>
                 <constraint firstItem="Zmd-tm-sPr" firstAttribute="leading" secondItem="FfL-a2-Ex6" secondAttribute="leading" constant="8" id="z1B-vi-tF2"/>
-                <constraint firstItem="etc-mQ-D1x" firstAttribute="centerX" secondItem="Zmd-tm-sPr" secondAttribute="centerX" id="zO6-W7-bIL"/>
-                <constraint firstItem="zUk-jb-7K7" firstAttribute="centerX" secondItem="sa0-zS-unE" secondAttribute="centerX" id="zQh-Og-grB"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
+        <image name="DayButtonSelected.png" width="300" height="300"/>
         <image name="DayButtonUnselected.png" width="300" height="300"/>
         <image name="EditIcon.png" width="512" height="512"/>
     </resources>
