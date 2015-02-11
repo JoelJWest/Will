@@ -15,7 +15,7 @@
 @interface JJWHabitCardTableViewCell : UITableViewCell
 
 @property (nonatomic) IBOutlet UIView *cardBackground;
-@property (nonatomic) IBOutlet UIView *cardBackgroundEdit;
 @property (nonatomic) NSIndexPath *cellIndex;
 @property id <JJWHabitCardTableViewCellDelegate> delegate;
+
 @end

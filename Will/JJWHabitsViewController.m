@@ -10,6 +10,7 @@
 #import "JJWMacros.h"
 #import "JJWHabitCardTableViewCell.h"
 #import "JJWMenuGestureRecognizer.h"
+#import "JJWHabitCardEditView.h"
 
 @interface JJWHabitsViewController () <UITableViewDataSource, UITableViewDelegate, JJWHabitCardTableViewCellDelegate>
 @property (nonatomic) CGPoint startTouch;
@@ -143,18 +144,23 @@
     return 280;
 }
 
+
+#pragma mark CardView Delegate Methods
+
 - (void)didPressEditButtonOnCardAt:(NSIndexPath *)indexPath
 {
-    NSLog(@"Cell at %@ was selected",indexPath);
     JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    JJWHabitCardEditView *editView = [JJWHabitCardEditView viewFromNib];
+    editView.frame = selectedCell.cardBackground.frame;
+    [selectedCell.cardBackground insertSubview:editView belowSubview:selectedCell.cardBackground];
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:.5];
-    [UIView transitionFromView:selectedCell.cardBackground toView:selectedCell.cardBackgroundEdit duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
+    [UIView transitionFromView:selectedCell.cardBackground toView:editView duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
     [UIView commitAnimations];
-    
-    
 }
+
 @end
 
 

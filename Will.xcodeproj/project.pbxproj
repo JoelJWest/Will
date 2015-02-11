@@ -55,6 +55,8 @@
 		38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */; };
 		38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */; };
 		38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */; };
+		38DC34301A8BF8D70018F733 /* JJWHabitCardEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DC342F1A8BF8D70018F733 /* JJWHabitCardEditView.m */; };
+		38DC34321A8BF8EC0018F733 /* JJWHabitCardEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DC34311A8BF8EC0018F733 /* JJWHabitCardEditView.xib */; };
 		38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */; };
 		38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */; };
 		38F5F4131A80314F00C2AF53 /* JJWTodayNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4111A80314F00C2AF53 /* JJWTodayNavigationController.m */; };
@@ -135,6 +137,9 @@
 		38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		38DC342E1A8BF8D70018F733 /* JJWHabitCardEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitCardEditView.h; sourceTree = "<group>"; };
+		38DC342F1A8BF8D70018F733 /* JJWHabitCardEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitCardEditView.m; sourceTree = "<group>"; };
+		38DC34311A8BF8EC0018F733 /* JJWHabitCardEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitCardEditView.xib; sourceTree = "<group>"; };
 		38F5F40B1A80312000C2AF53 /* JJWTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWTodayViewController.h; path = ../JJWTodayViewController.h; sourceTree = "<group>"; };
 		38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWTodayViewController.m; path = ../JJWTodayViewController.m; sourceTree = "<group>"; };
 		38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWTodayViewController.xib; path = ../JJWTodayViewController.xib; sourceTree = "<group>"; };
@@ -326,6 +331,9 @@
 				381524A01A8AE22100715A81 /* JJWHabitCardTableViewCell.h */,
 				381524A11A8AE22100715A81 /* JJWHabitCardTableViewCell.m */,
 				381524A21A8AE22100715A81 /* JJWHabitCardTableViewCell.xib */,
+				38DC342E1A8BF8D70018F733 /* JJWHabitCardEditView.h */,
+				38DC342F1A8BF8D70018F733 /* JJWHabitCardEditView.m */,
+				38DC34311A8BF8EC0018F733 /* JJWHabitCardEditView.xib */,
 			);
 			name = HabitsViewControllers;
 			sourceTree = "<group>";
@@ -495,6 +503,7 @@
 				381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
 				38531B5B1A8B13BE00475DBB /* EditIcon.png in Resources */,
+				38DC34321A8BF8EC0018F733 /* JJWHabitCardEditView.xib in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
 				38B5AAD01A85DFDE0088D13F /* Roboto-Medium.ttf in Resources */,
@@ -536,6 +545,7 @@
 			files = (
 				380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */,
 				38F870921A87252F0049199E /* JJWCircleView.m in Sources */,
+				38DC34301A8BF8D70018F733 /* JJWHabitCardEditView.m in Sources */,
 				381524A31A8AE22100715A81 /* JJWHabitCardTableViewCell.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
 				38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */,
