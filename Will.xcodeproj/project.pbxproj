@@ -22,6 +22,9 @@
 		381524961A8ABDEE00715A81 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 381524931A8ABDEE00715A81 /* License.txt */; };
 		381524971A8ABDEE00715A81 /* Moon Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 381524941A8ABDEE00715A81 /* Moon Bold.otf */; };
 		381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 381524951A8ABDEE00715A81 /* Moon Light.otf */; };
+		3815249A1A8ACFB900715A81 /* HamburgerIconBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 381524991A8ACFB900715A81 /* HamburgerIconBlue.png */; };
+		381524A31A8AE22100715A81 /* JJWHabitCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 381524A11A8AE22100715A81 /* JJWHabitCardTableViewCell.m */; };
+		381524A41A8AE22100715A81 /* JJWHabitCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381524A21A8AE22100715A81 /* JJWHabitCardTableViewCell.xib */; };
 		3842C7A91A894E45004334E8 /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3842C7A81A894E44004334E8 /* menuIcon.png */; };
 		3842C7AE1A8951F9004334E8 /* JJWMenuGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */; };
 		38B4CC561A80297100B05CC4 /* JJWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CC541A80297100B05CC4 /* JJWMenuViewController.m */; };
@@ -91,6 +94,10 @@
 		381524931A8ABDEE00715A81 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		381524941A8ABDEE00715A81 /* Moon Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Bold.otf"; sourceTree = "<group>"; };
 		381524951A8ABDEE00715A81 /* Moon Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Light.otf"; sourceTree = "<group>"; };
+		381524991A8ACFB900715A81 /* HamburgerIconBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HamburgerIconBlue.png; sourceTree = "<group>"; };
+		381524A01A8AE22100715A81 /* JJWHabitCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWHabitCardTableViewCell.h; sourceTree = "<group>"; };
+		381524A11A8AE22100715A81 /* JJWHabitCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWHabitCardTableViewCell.m; sourceTree = "<group>"; };
+		381524A21A8AE22100715A81 /* JJWHabitCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJWHabitCardTableViewCell.xib; sourceTree = "<group>"; };
 		3842C7A81A894E44004334E8 /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		3842C7AC1A8951F9004334E8 /* JJWMenuGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJWMenuGestureRecognizer.h; sourceTree = "<group>"; };
 		3842C7AD1A8951F9004334E8 /* JJWMenuGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJWMenuGestureRecognizer.m; sourceTree = "<group>"; };
@@ -284,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				3842C7A81A894E44004334E8 /* menuIcon.png */,
+				381524991A8ACFB900715A81 /* HamburgerIconBlue.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -306,6 +314,9 @@
 				380E15431A8931AB00D7B638 /* JJWHabitsViewController.h */,
 				380E15441A8931AB00D7B638 /* JJWHabitsViewController.m */,
 				380E15451A8931AB00D7B638 /* JJWHabitsViewController.xib */,
+				381524A01A8AE22100715A81 /* JJWHabitCardTableViewCell.h */,
+				381524A11A8AE22100715A81 /* JJWHabitCardTableViewCell.m */,
+				381524A21A8AE22100715A81 /* JJWHabitCardTableViewCell.xib */,
 			);
 			name = HabitsViewControllers;
 			sourceTree = "<group>";
@@ -459,11 +470,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3815249A1A8ACFB900715A81 /* HamburgerIconBlue.png in Resources */,
 				38B5AACB1A85DFDE0088D13F /* Roboto-Bold.ttf in Resources */,
 				2847B14E1A75EA050060D66B /* LaunchScreen.xib in Resources */,
 				38F5F4141A80314F00C2AF53 /* JJWTodayNavigationController.xib in Resources */,
 				38B5AAD71A85DFDE0088D13F /* RobotoCondensed-Italic.ttf in Resources */,
 				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
+				381524A41A8AE22100715A81 /* JJWHabitCardTableViewCell.xib in Resources */,
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
 				381524961A8ABDEE00715A81 /* License.txt in Resources */,
@@ -511,6 +524,7 @@
 			files = (
 				380E154B1A8931CD00D7B638 /* JJWHabitsNavigationController.m in Sources */,
 				38F870921A87252F0049199E /* JJWCircleView.m in Sources */,
+				381524A31A8AE22100715A81 /* JJWHabitCardTableViewCell.m in Sources */,
 				2847B1401A75EA050060D66B /* AppDelegate.m in Sources */,
 				38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */,
 				2847B1431A75EA050060D66B /* Will.xcdatamodeld in Sources */,

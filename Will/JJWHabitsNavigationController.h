@@ -10,4 +10,6 @@
 
 @interface JJWHabitsNavigationController : UINavigationController
 
+@property (nonatomic) IBOutlet UINavigationBar *titleBar;
+
 @end

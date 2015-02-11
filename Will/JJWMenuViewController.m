@@ -164,7 +164,7 @@
         selectedCell.cellLabel.textColor = Blue_Color;
         
         JJWHabitsViewController *vc = [[JJWHabitsViewController alloc] init];
-        JJWHabitsNavigationController *nvc = [[JJWHabitsNavigationController alloc] initWithRootViewController:vc];
+        JJWHabitsNavigationController *nvc = [[JJWHabitsNavigationController alloc] initWithRootViewController:vc];         
         vc.delegate = self;
         nvc.view.frame = self.containerView.window.frame;
         [currentTopViewController.view removeFromSuperview];
