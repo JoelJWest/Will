@@ -15,6 +15,7 @@
 @interface JJWHabitsViewController () <UITableViewDataSource, UITableViewDelegate, JJWHabitCardTableViewCellDelegate>
 @property (nonatomic) CGPoint startTouch;
 @property (nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) BOOL editing;
 @end
 
 @implementation JJWHabitsViewController
@@ -28,6 +29,7 @@
     [self addMenuButtonWithGesture];
     [self configureTitleBar];
     [self configureTableView];
+    self.editing = NO;
 }
 
 - (void)configureTableView
@@ -127,7 +129,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -148,21 +150,39 @@
 
 - (void)didPressEditButtonOnCardAt:(NSIndexPath *)indexPath
 {
-    JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-
-    [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-        selectedCell.mainView.hidden = YES;
-    }completion:^(BOOL finished) {}];
+    if (self.editing == NO){
+        JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 300, 0);
+    
+        [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:   UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                selectedCell.mainView.hidden = YES;
+                [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        }
+        completion:^(BOOL finished) {}];
+        self.tableView.scrollEnabled = NO;
+        self.editing = YES;
+    }
 }
 
 -(void)didPressSaveButtonOnCardAt:(NSIndexPath *)indexPath
 {
-    JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-
-    [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-        selectedCell.mainView.hidden = NO;
-    }completion:^(BOOL finished) {}];
+    if (self.editing == YES){
+        JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+        [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                selectedCell.mainView.hidden = NO;
+        }
+        completion:^(BOOL finished){
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.3];
+            [self.tableView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
+            [UIView commitAnimations];
+            self.tableView.scrollEnabled = YES;
+        }];
+        self.editing = NO;
+    }
 }
+
 
 @end
 

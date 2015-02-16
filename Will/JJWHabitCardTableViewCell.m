@@ -21,6 +21,8 @@
     CGPathRef shadowPath = [UIBezierPath bezierPathWithRect:shadowFrame].CGPath;
     
     self.cardBackground.layer.shadowPath = shadowPath;
+    
+    self.textField.delegate = self;
 }
 
 - (IBAction)editButtonTouchUpInside:(id)sender
@@ -31,6 +33,7 @@
 - (IBAction)saveButtonTouchUpInside:(id)sender
 {
     [self.delegate didPressSaveButtonOnCardAt:self.cellIndex];
+    [self.textField resignFirstResponder];
 }
 
 - (IBAction)sundayButtonTouchUpInside:(id)sender
@@ -88,7 +91,7 @@
     }
 }
 
--(IBAction)fridayButtonTouchUpInside:(id)sender
+- (IBAction)fridayButtonTouchUpInside:(id)sender
 {
     UIButton *button = sender;
     if (button.selected == YES){
@@ -99,7 +102,7 @@
     }
 }
 
--(IBAction)saturdayButtonTouchUpInside:(id)sender
+- (IBAction)saturdayButtonTouchUpInside:(id)sender
 {
     UIButton *button = sender;
     if (button.selected == YES){
@@ -108,6 +111,17 @@
     else {
         button.selected = YES;
     }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 @end

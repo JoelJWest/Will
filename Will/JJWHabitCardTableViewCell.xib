@@ -8,7 +8,6 @@
     <customFonts key="customFonts">
         <mutableArray key="Roboto-Light.ttf">
             <string>Roboto-Light</string>
-            <string>Roboto-Light</string>
         </mutableArray>
         <mutableArray key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
@@ -64,26 +63,22 @@
                                                     <action selector="saveButtonTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JuL-fd-L48"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSu-EU-UAo">
-                                                <rect key="frame" x="50" y="9" width="484" height="31"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="31" id="SxZ-yg-Joo"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="29"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ay-yL-96D">
+                                                <rect key="frame" x="75" y="7" width="434" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.41176470590000003" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="th2-Kn-6NH" secondAttribute="trailing" constant="8" id="34C-k8-0KD"/>
+                                            <constraint firstItem="6ay-yL-96D" firstAttribute="leading" secondItem="Iyf-tf-xAR" secondAttribute="leading" constant="75" id="8qy-Bs-k9n"/>
                                             <constraint firstAttribute="bottom" secondItem="th2-Kn-6NH" secondAttribute="bottom" constant="7" id="Htz-dJ-9g5"/>
-                                            <constraint firstAttribute="centerX" secondItem="zSu-EU-UAo" secondAttribute="centerX" id="M8K-uv-uG9"/>
-                                            <constraint firstItem="zSu-EU-UAo" firstAttribute="leading" secondItem="Iyf-tf-xAR" secondAttribute="leading" constant="50" id="Ufk-3S-5ts"/>
+                                            <constraint firstItem="th2-Kn-6NH" firstAttribute="leading" secondItem="6ay-yL-96D" secondAttribute="trailing" constant="38" id="LfZ-fu-x0s"/>
                                             <constraint firstItem="th2-Kn-6NH" firstAttribute="top" secondItem="Iyf-tf-xAR" secondAttribute="top" constant="9" id="XV8-CK-s8Y"/>
+                                            <constraint firstAttribute="centerY" secondItem="6ay-yL-96D" secondAttribute="centerY" constant="0.5" id="eyr-ME-pvB"/>
                                             <constraint firstAttribute="height" constant="45" id="rCN-IZ-NNr"/>
-                                            <constraint firstAttribute="centerY" secondItem="zSu-EU-UAo" secondAttribute="centerY" constant="-2" id="vXF-fn-mRD"/>
-                                            <constraint firstItem="th2-Kn-6NH" firstAttribute="leading" secondItem="zSu-EU-UAo" secondAttribute="trailing" constant="13" id="veM-br-evU"/>
+                                            <constraint firstAttribute="centerY" secondItem="6ay-yL-96D" secondAttribute="centerY" constant="0.5" id="zbO-ZP-VVS"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ4-wl-mg2">
@@ -314,6 +309,7 @@
                                     <constraint firstItem="dFb-EK-GDd" firstAttribute="leading" secondItem="Vcy-AT-Rmx" secondAttribute="trailing" id="tHm-5l-YRU"/>
                                     <constraint firstAttribute="bottom" secondItem="QSI-Rs-AGn" secondAttribute="bottom" constant="10" id="tNl-Dm-5Dh"/>
                                     <constraint firstItem="Iyf-tf-xAR" firstAttribute="top" secondItem="wAW-8i-0mA" secondAttribute="top" id="uoZ-8g-vWz"/>
+                                    <constraint firstItem="6ay-yL-96D" firstAttribute="centerX" secondItem="wAW-8i-0mA" secondAttribute="centerX" id="vaz-Hu-NiO"/>
                                     <constraint firstAttribute="trailing" secondItem="GdI-vk-00R" secondAttribute="trailing" constant="8" id="xKw-Na-fDA"/>
                                 </constraints>
                             </view>
@@ -643,8 +639,9 @@
                 <outlet property="cardBackground" destination="ZqG-zr-cXL" id="2ix-pf-zGm"/>
                 <outlet property="editView" destination="wAW-8i-0mA" id="gct-dJ-9G5"/>
                 <outlet property="mainView" destination="Zde-gn-zka" id="Cdi-nF-h35"/>
+                <outlet property="textField" destination="6ay-yL-96D" id="Y0V-vE-bTK"/>
             </connections>
-            <point key="canvasLocation" x="182" y="349"/>
+            <point key="canvasLocation" x="182" y="345"/>
         </tableViewCell>
     </objects>
     <resources>

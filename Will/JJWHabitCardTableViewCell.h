@@ -13,13 +13,15 @@
 - (void)didPressSaveButtonOnCardAt:(NSIndexPath *)indexPath;
 @end
 
-@interface JJWHabitCardTableViewCell : UITableViewCell
+@interface JJWHabitCardTableViewCell : UITableViewCell <UITextFieldDelegate>
 
 @property (nonatomic) IBOutlet UIView *cardBackground;
 @property (nonatomic) IBOutlet UIView *mainView;
 @property (nonatomic) IBOutlet UIView *editView;
 
+@property (nonatomic) IBOutlet UITextField *textField; 
 @property (nonatomic) NSIndexPath *cellIndex;
+
 @property id <JJWHabitCardTableViewCellDelegate> delegate;
 
 - (IBAction)sundayButtonTouchUpInside:(id)sender;
