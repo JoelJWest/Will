@@ -23,9 +23,91 @@
     self.cardBackground.layer.shadowPath = shadowPath;
 }
 
-- (IBAction)editButtonPressed:(id)sender
+- (IBAction)editButtonTouchUpInside:(id)sender
 {
     [self.delegate didPressEditButtonOnCardAt:self.cellIndex];
+}
+
+- (IBAction)saveButtonTouchUpInside:(id)sender
+{
+    [self.delegate didPressSaveButtonOnCardAt:self.cellIndex];
+}
+
+- (IBAction)sundayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+- (IBAction)mondayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+- (IBAction)tuesdayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+- (IBAction)wednesdayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+- (IBAction)thursdayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+-(IBAction)fridayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
+}
+
+-(IBAction)saturdayButtonTouchUpInside:(id)sender
+{
+    UIButton *button = sender;
+    if (button.selected == YES){
+        button.selected = NO;
+    }
+    else {
+        button.selected = YES;
+    }
 }
 
 @end

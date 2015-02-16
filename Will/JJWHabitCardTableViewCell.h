@@ -10,12 +10,24 @@
 
 @protocol JJWHabitCardTableViewCellDelegate <NSObject>
 - (void)didPressEditButtonOnCardAt:(NSIndexPath *)indexPath;
+- (void)didPressSaveButtonOnCardAt:(NSIndexPath *)indexPath;
 @end
 
 @interface JJWHabitCardTableViewCell : UITableViewCell
 
 @property (nonatomic) IBOutlet UIView *cardBackground;
+@property (nonatomic) IBOutlet UIView *mainView;
+@property (nonatomic) IBOutlet UIView *editView;
+
 @property (nonatomic) NSIndexPath *cellIndex;
 @property id <JJWHabitCardTableViewCellDelegate> delegate;
+
+- (IBAction)sundayButtonTouchUpInside:(id)sender;
+- (IBAction)mondayButtonTouchUpInside:(id)sender;
+- (IBAction)tuesdayButtonTouchUpInside:(id)sender;
+- (IBAction)wednesdayButtonTouchUpInside:(id)sender;
+- (IBAction)thursdayButtonTouchUpInside:(id)sender;
+- (IBAction)fridayButtonTouchUpInside:(id)sender;
+- (IBAction)saturdayButtonTouchUpInside:(id)sender;
 
 @end

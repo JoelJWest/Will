@@ -10,7 +10,7 @@
 #import "JJWMacros.h"
 #import "JJWHabitCardTableViewCell.h"
 #import "JJWMenuGestureRecognizer.h"
-#import "JJWHabitCardEditView.h"
+
 
 @interface JJWHabitsViewController () <UITableViewDataSource, UITableViewDelegate, JJWHabitCardTableViewCellDelegate>
 @property (nonatomic) CGPoint startTouch;
@@ -135,7 +135,6 @@
     JJWHabitCardTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CardCell"];
     cell.cellIndex = indexPath;
     cell.delegate = self;
-
     return cell;
 }
 
@@ -150,15 +149,19 @@
 - (void)didPressEditButtonOnCardAt:(NSIndexPath *)indexPath
 {
     JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-    
-    JJWHabitCardEditView *editView = [JJWHabitCardEditView viewFromNib];
-    editView.frame = selectedCell.cardBackground.frame;
-    [selectedCell.cardBackground insertSubview:editView belowSubview:selectedCell.cardBackground];
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:.5];
-    [UIView transitionFromView:selectedCell.cardBackground toView:editView duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
-    [UIView commitAnimations];
+
+    [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+        selectedCell.mainView.hidden = YES;
+    }completion:^(BOOL finished) {}];
+}
+
+-(void)didPressSaveButtonOnCardAt:(NSIndexPath *)indexPath
+{
+    JJWHabitCardTableViewCell *selectedCell = (JJWHabitCardTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+
+    [UIView transitionWithView:selectedCell.cardBackground  duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+        selectedCell.mainView.hidden = NO;
+    }completion:^(BOOL finished) {}];
 }
 
 @end
