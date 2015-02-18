@@ -55,6 +55,14 @@
 		38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */; };
 		38B5AAD91A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */; };
 		38B5AADA1A85DFDE0088D13F /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */; };
+		38C476561A9462B3001AF720 /* CheckMarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C476541A9462B3001AF720 /* CheckMarkIcon.png */; };
+		38C476571A9462B3001AF720 /* XButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C476551A9462B3001AF720 /* XButtonIcon.png */; };
+		38C476591A9464C6001AF720 /* ClockIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C476581A9464C6001AF720 /* ClockIcon.png */; };
+		38C4765B1A946BD6001AF720 /* rubbish.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C4765A1A946BD6001AF720 /* rubbish.png */; };
+		38C4765E1A94701F001AF720 /* EditViewSelectedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C4765C1A94701F001AF720 /* EditViewSelectedButton.png */; };
+		38C4765F1A94701F001AF720 /* EditViewUnselectedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C4765D1A94701F001AF720 /* EditViewUnselectedButton.png */; };
+		38C476621A94732C001AF720 /* SelectedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C476601A94732C001AF720 /* SelectedButton.png */; };
+		38C476631A94732C001AF720 /* UnselectedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C476611A94732C001AF720 /* UnselectedButton.png */; };
 		38F5F40E1A80312000C2AF53 /* JJWTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */; };
 		38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */; };
 		38F5F4131A80314F00C2AF53 /* JJWTodayNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F5F4111A80314F00C2AF53 /* JJWTodayNavigationController.m */; };
@@ -135,6 +143,14 @@
 		38B5AAC51A85DFDE0088D13F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		38B5AAC61A85DFDE0088D13F /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		38B5AAC71A85DFDE0088D13F /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		38C476541A9462B3001AF720 /* CheckMarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMarkIcon.png; sourceTree = "<group>"; };
+		38C476551A9462B3001AF720 /* XButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XButtonIcon.png; sourceTree = "<group>"; };
+		38C476581A9464C6001AF720 /* ClockIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockIcon.png; sourceTree = "<group>"; };
+		38C4765A1A946BD6001AF720 /* rubbish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rubbish.png; sourceTree = "<group>"; };
+		38C4765C1A94701F001AF720 /* EditViewSelectedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EditViewSelectedButton.png; sourceTree = "<group>"; };
+		38C4765D1A94701F001AF720 /* EditViewUnselectedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EditViewUnselectedButton.png; sourceTree = "<group>"; };
+		38C476601A94732C001AF720 /* SelectedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectedButton.png; sourceTree = "<group>"; };
+		38C476611A94732C001AF720 /* UnselectedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnselectedButton.png; sourceTree = "<group>"; };
 		38F5F40B1A80312000C2AF53 /* JJWTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJWTodayViewController.h; path = ../JJWTodayViewController.h; sourceTree = "<group>"; };
 		38F5F40C1A80312000C2AF53 /* JJWTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJWTodayViewController.m; path = ../JJWTodayViewController.m; sourceTree = "<group>"; };
 		38F5F40D1A80312000C2AF53 /* JJWTodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JJWTodayViewController.xib; path = ../JJWTodayViewController.xib; sourceTree = "<group>"; };
@@ -296,6 +312,14 @@
 		3842C7AA1A894E4A004334E8 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				38C476601A94732C001AF720 /* SelectedButton.png */,
+				38C476611A94732C001AF720 /* UnselectedButton.png */,
+				38C4765C1A94701F001AF720 /* EditViewSelectedButton.png */,
+				38C4765D1A94701F001AF720 /* EditViewUnselectedButton.png */,
+				38C4765A1A946BD6001AF720 /* rubbish.png */,
+				38C476581A9464C6001AF720 /* ClockIcon.png */,
+				38C476541A9462B3001AF720 /* CheckMarkIcon.png */,
+				38C476551A9462B3001AF720 /* XButtonIcon.png */,
 				38531B5C1A8B189C00475DBB /* DayButtonSelected.png */,
 				38531B5D1A8B189C00475DBB /* DayButtonUnselected.png */,
 				38531B5A1A8B13BE00475DBB /* EditIcon.png */,
@@ -480,20 +504,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3815249A1A8ACFB900715A81 /* HamburgerIconBlue.png in Resources */,
+				38C476631A94732C001AF720 /* UnselectedButton.png in Resources */,
+				38C4765E1A94701F001AF720 /* EditViewSelectedButton.png in Resources */,
 				38B5AACB1A85DFDE0088D13F /* Roboto-Bold.ttf in Resources */,
 				2847B14E1A75EA050060D66B /* LaunchScreen.xib in Resources */,
 				38F5F4141A80314F00C2AF53 /* JJWTodayNavigationController.xib in Resources */,
 				38B5AAD71A85DFDE0088D13F /* RobotoCondensed-Italic.ttf in Resources */,
 				38B5AACC1A85DFDE0088D13F /* Roboto-BoldItalic.ttf in Resources */,
 				381524A41A8AE22100715A81 /* JJWHabitCardTableViewCell.xib in Resources */,
+				38C476571A9462B3001AF720 /* XButtonIcon.png in Resources */,
 				38B5AAD31A85DFDE0088D13F /* Roboto-Thin.ttf in Resources */,
 				38B5AAB21A85DD160088D13F /* JJWMenuCircleTableViewCell.xib in Resources */,
 				381524961A8ABDEE00715A81 /* License.txt in Resources */,
+				38C4765F1A94701F001AF720 /* EditViewUnselectedButton.png in Resources */,
 				38531B5F1A8B189C00475DBB /* DayButtonUnselected.png in Resources */,
+				38C476621A94732C001AF720 /* SelectedButton.png in Resources */,
 				3842C7A91A894E45004334E8 /* menuIcon.png in Resources */,
+				38C4765B1A946BD6001AF720 /* rubbish.png in Resources */,
 				38B5AACD1A85DFDE0088D13F /* Roboto-Italic.ttf in Resources */,
 				381524981A8ABDEE00715A81 /* Moon Light.otf in Resources */,
 				38F5F40F1A80312000C2AF53 /* JJWTodayViewController.xib in Resources */,
+				38C476591A9464C6001AF720 /* ClockIcon.png in Resources */,
 				38531B5B1A8B13BE00475DBB /* EditIcon.png in Resources */,
 				38B5AAD81A85DFDE0088D13F /* RobotoCondensed-Light.ttf in Resources */,
 				2847B14B1A75EA050060D66B /* Images.xcassets in Resources */,
@@ -503,6 +534,7 @@
 				38B5AACE1A85DFDE0088D13F /* Roboto-Light.ttf in Resources */,
 				380E154C1A8931CD00D7B638 /* JJWHabitsNavigationController.xib in Resources */,
 				2847B17D1A75F7C80060D66B /* JJWMenuTableViewCell.xib in Resources */,
+				38C476561A9462B3001AF720 /* CheckMarkIcon.png in Resources */,
 				38B5AAD21A85DFDE0088D13F /* Roboto-Regular.ttf in Resources */,
 				380E15471A8931AB00D7B638 /* JJWHabitsViewController.xib in Resources */,
 				38B5AACF1A85DFDE0088D13F /* Roboto-LightItalic.ttf in Resources */,

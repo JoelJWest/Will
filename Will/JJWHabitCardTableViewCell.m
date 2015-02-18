@@ -23,11 +23,20 @@
     self.cardBackground.layer.shadowPath = shadowPath;
     
     self.textField.delegate = self;
+    
+    if ([self.textField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor whiteColor];
+        self.textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Add Title" attributes:@{NSForegroundColorAttributeName: color}];
+    } else {
+        NSLog(@"Cannot set placeholder text's color, because deployment target is earlier than iOS 6.0");
+        // TODO: Add fall-back code to set placeholder color.
+    }
 }
 
 - (IBAction)editButtonTouchUpInside:(id)sender
 {
     [self.delegate didPressEditButtonOnCardAt:self.cellIndex];
+    
 }
 
 - (IBAction)saveButtonTouchUpInside:(id)sender
@@ -123,5 +132,6 @@
     [self.textField resignFirstResponder];
     return YES;
 }
+
 
 @end

@@ -61,6 +61,7 @@
   
     }
     if (abs(localTouchLocation.x - self.firstTouch.x) > 5){
+     
         self.state = UIGestureRecognizerStateChanged;
     }
 }

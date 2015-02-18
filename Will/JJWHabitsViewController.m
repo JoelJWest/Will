@@ -16,6 +16,7 @@
 @property (nonatomic) CGPoint startTouch;
 @property (nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) BOOL editing;
+@property (nonatomic) JJWMenuGestureRecognizer *menuPanGesture;
 @end
 
 @implementation JJWHabitsViewController
@@ -40,10 +41,10 @@
     UINib *cardViewNib = [UINib nibWithNibName:@"JJWHabitCardTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:cardViewNib forCellReuseIdentifier:@"CardCell"];
     
-    JJWMenuGestureRecognizer *menuPanGesture = [[JJWMenuGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
-    menuPanGesture.cancelsTouchesInView = NO;
+    self.menuPanGesture = [[JJWMenuGestureRecognizer alloc] initWithTarget:self action:@selector(wasDragged:)];
+    self.menuPanGesture.cancelsTouchesInView = NO;
     
-    [self.tableView addGestureRecognizer:menuPanGesture];
+    [self.tableView addGestureRecognizer:self.menuPanGesture];
 }
 
 - (void)addMenuButtonWithGesture
@@ -107,21 +108,26 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesMoved:touches withEvent:event];
-    UITouch *touch = [touches anyObject];
-    CGPoint touchPoint = [touch locationInView:self.navigationController.parentViewController.view.window];
-    CGPoint localPoint = [touch locationInView:self.view];
-    if (localPoint.x < 100){
-        int movement = touchPoint.x - self.startTouch.x;
-        
-        [self.delegate didDragWithMovment:movement];
-        self.startTouch = touchPoint;
-    }
+    
+   
+        UITouch *touch = [touches anyObject];
+        CGPoint touchPoint = [touch locationInView:self.navigationController.parentViewController.view.window];
+        CGPoint localPoint = [touch locationInView:self.view];
+        if (localPoint.x < 100){
+            int movement = touchPoint.x - self.startTouch.x;
+            if (self.editing == NO){
+            [self.delegate didDragWithMovment:movement];
+            self.startTouch = touchPoint;
+            }
+        }
+    
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesEnded:touches withEvent:event];
     [self.delegate animateMenu];
+
 }
 
 
@@ -161,6 +167,7 @@
         completion:^(BOOL finished) {}];
         self.tableView.scrollEnabled = NO;
         self.editing = YES;
+        self.navigationItem.leftBarButtonItem.enabled = NO;
     }
 }
 
@@ -179,6 +186,7 @@
             [UIView commitAnimations];
             self.tableView.scrollEnabled = YES;
         }];
+        self.navigationItem.leftBarButtonItem.enabled = YES;
         self.editing = NO;
     }
 }
